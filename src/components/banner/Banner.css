@@ -4,15 +4,17 @@
     grid-template-areas:
     "pic"
     "name"
-    "position";
+    "position"
+    "cv";
+    margin-top: 24px;
 }
 
 @media (min-width:640px) {
     .banner_container {
-        display: grid;
         grid-template-areas:
         "pic name"
-        "pic position";
+        "pic position"
+        "pic cv";
     }
 }
 
@@ -55,4 +57,11 @@
     display: grid;
     align-items: center;
     justify-content: center;
+}
+
+.banner_cv {
+    grid-area: cv;
+    display: grid;
+    justify-self: center;
+    align-self: center;
 }
