@@ -1,13 +1,15 @@
+import Header from "./components/header/Header";
+
 import Footer from "./components/footer/Footer";
+import "./App.css"
+import Main from "./components/main/Main";
 
 function App() {
   return (
     <div className="App">
-      <Footer></Footer>
-      This is a link to my expression recognition using Machine Learning
-      <a href="https://expression-test.vercel.app/">
-        My amazing project
-      </a>
+      <Header></Header>
+      <Main></Main>
+      {/* <Footer></Footer> */}
     </div>
   );
 }
