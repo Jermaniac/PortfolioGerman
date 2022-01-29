@@ -49,19 +49,16 @@ export default function Header() {
         <IconButton color="inherit">
             <MailIcon/>
         </IconButton>
-        <p>Mail</p>
       </MenuItem>
       <MenuItem>
-        <IconButton color="inherit">
+        <IconButton color="inherit" href="https://www.linkedin.com/in/germ%C3%A1n-gonz%C3%A1lez-garz%C3%B3n-8807a2162/">
             <LinkedInIcon/>
         </IconButton>
-        <p>Linkedin</p>
       </MenuItem>
       <MenuItem>
-        <IconButton color="inherit">
+        <IconButton color="inherit" href="https://github.com/Jermaniac">
             <GitHubIcon/>
         </IconButton>
-        <p>Github</p>
       </MenuItem>
     </Menu>
   );
@@ -82,10 +79,10 @@ export default function Header() {
             <IconButton color="inherit">
                 <MailIcon/>
             </IconButton>
-            <IconButton color="inherit">
+            <IconButton color="inherit" href="https://www.linkedin.com/in/germ%C3%A1n-gonz%C3%A1lez-garz%C3%B3n-8807a2162/">
                 <LinkedInIcon/>
             </IconButton>
-            <IconButton color="inherit">
+            <IconButton color="inherit" href="https://github.com/Jermaniac">
                 <GitHubIcon/>
             </IconButton>
           </Box>
