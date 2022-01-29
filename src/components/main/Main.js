@@ -1,14 +1,12 @@
 import Banner from "../banner/Banner";
+import Projects from "../projects/Projects";
 
 function Main() {
     return (
         <>
             <Banner></Banner>
 
-            {/* This is a link to my expression recognition using Machine Learning
-            <a href="https://expression-test.vercel.app/">
-            My amazing project
-            </a> */}
+            <Projects></Projects>
         </>
     );
   }
