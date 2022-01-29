@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/static/css/main.b1a5e443.chunk.css",
+    "main.js": "/static/js/main.f09754b4.chunk.js",
+    "main.js.map": "/static/js/main.f09754b4.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.582f54a3.js",
+    "runtime-main.js.map": "/static/js/runtime-main.582f54a3.js.map",
+    "static/js/2.5413a207.chunk.js": "/static/js/2.5413a207.chunk.js",
+    "static/js/2.5413a207.chunk.js.map": "/static/js/2.5413a207.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.b1a5e443.chunk.css.map": "/static/css/main.b1a5e443.chunk.css.map",
+    "static/js/2.5413a207.chunk.js.LICENSE.txt": "/static/js/2.5413a207.chunk.js.LICENSE.txt",
+    "static/media/CVGERMAN2021-2022.5fc07834.pdf": "/static/media/CVGERMAN2021-2022.5fc07834.pdf",
+    "static/media/german-selfie.5e2be5a4.jpeg": "/static/media/german-selfie.5e2be5a4.jpeg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.582f54a3.js",
+    "static/js/2.5413a207.chunk.js",
+    "static/css/main.b1a5e443.chunk.css",
+    "static/js/main.f09754b4.chunk.js"
+  ]
+}
