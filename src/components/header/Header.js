@@ -22,22 +22,37 @@ export default function Header() {
     setMobileMoreAnchorEl(null);
   };
 
-
-
   const handleMobileMenuOpen = (event) => {
     setMobileMoreAnchorEl(event.currentTarget);
   };
+
+  const mailIconButton = (
+    <IconButton color="inherit" href="mailto:germansk98@gmail.com">
+      <MailIcon/>
+    </IconButton>
+  );
+
+  const linkedinIconButton = (
+    <IconButton color="inherit" href="https://www.linkedin.com/in/germ%C3%A1n-gonz%C3%A1lez-garz%C3%B3n-8807a2162/">
+      <LinkedInIcon/>
+    </IconButton>
+  );
+
+  const githubIconButton = (
+    <IconButton color="inherit" href="https://github.com/Jermaniac">
+      <GitHubIcon/>
+    </IconButton>
+  );
 
   const mobileMenuId = 'primary-search-account-menu-mobile';
   const renderMobileMenu = (
     <Menu
       anchorEl={mobileMoreAnchorEl}
       anchorOrigin={{
-        vertical: 'top',
+        vertical: 'bottom',
         horizontal: 'right',
       }}
       id={mobileMenuId}
-      keepMounted
       transformOrigin={{
         vertical: 'top',
         horizontal: 'right',
@@ -46,19 +61,13 @@ export default function Header() {
       onClose={handleMobileMenuClose}
     >
       <MenuItem>
-        <IconButton color="inherit">
-            <MailIcon/>
-        </IconButton>
+        {mailIconButton}
       </MenuItem>
       <MenuItem>
-        <IconButton color="inherit" href="https://www.linkedin.com/in/germ%C3%A1n-gonz%C3%A1lez-garz%C3%B3n-8807a2162/">
-            <LinkedInIcon/>
-        </IconButton>
+        {linkedinIconButton}
       </MenuItem>
       <MenuItem>
-        <IconButton color="inherit" href="https://github.com/Jermaniac">
-            <GitHubIcon/>
-        </IconButton>
+        {githubIconButton}
       </MenuItem>
     </Menu>
   );
@@ -76,15 +85,9 @@ export default function Header() {
           </Typography>
           <Box sx={{ flexGrow: 1 }} />
           <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
-            <IconButton color="inherit">
-                <MailIcon/>
-            </IconButton>
-            <IconButton color="inherit" href="https://www.linkedin.com/in/germ%C3%A1n-gonz%C3%A1lez-garz%C3%B3n-8807a2162/">
-                <LinkedInIcon/>
-            </IconButton>
-            <IconButton color="inherit" href="https://github.com/Jermaniac">
-                <GitHubIcon/>
-            </IconButton>
+            {mailIconButton}
+            {linkedinIconButton}
+            {githubIconButton}
           </Box>
           <Box sx={{ display: { xs: 'flex', md: 'none' } }}>
             <IconButton
