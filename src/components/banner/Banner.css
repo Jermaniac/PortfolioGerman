@@ -41,16 +41,13 @@
     letter-spacing: 5px;
     text-transform: uppercase;
     text-align: center;
-    animation: animate 5s linear infinite;
+    color: black;
+    animation: animate 3s linear infinite;
 }
 @keyframes animate {
-    0%
-    {
-        color: #111;
-    }
     100%
     {
-        color:#fff;
+        color:#2666CF;
     }
 }
 
@@ -71,13 +68,13 @@
 
 
 .banner_role_wrapper .static_text {
-    font-size: 28px;
-    font-weight: 200;
+    font-size: 26px;
+    font-weight: 400;
 }
 
 .banner_role_wrapper .dynamic_text {
     margin-left: 7.5px;
-    height: 30px;
+    height: 29px;
     line-height: 30px;
     overflow: hidden;
 }
@@ -90,8 +87,8 @@
 .dynamic_text li {
     color: #2666CF;
     list-style: none;
-    font-size: 30px;
-    font-weight: 200;
+    font-size: 26px;
+    font-weight: 400;
     position: relative;
     top: 0;
     animation: slide 3s steps(3) infinite;

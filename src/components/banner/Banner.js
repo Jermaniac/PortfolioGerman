@@ -12,16 +12,16 @@ function Banner() {
         </picture>
         <div className="banner_name">GERMÁN GONZÁLEZ GARZÓN</div>
         <div class="banner_role_wrapper">
-          <div class="static_text"> I'm</div>
+          <div class="static_text"> I'm a</div>
           <ul class="dynamic_text">
             <li>
-              <span>Germán González</span>
+              <span>Software Engineer</span>
             </li>
             <li>
-              <span>a Software Developer</span>
+              <span>Web Developer</span>
             </li>
             <li>
-              <span>a Data Engineer</span>
+              <span>Big Data Developer</span>
             </li>
           </ul>
         </div>
