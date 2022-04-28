@@ -13,9 +13,9 @@
 @media (min-width:640px) {
     .banner_container {
         grid-template-areas:
-        "pic name"
-        "pic role"
-        "pic cv";
+        "name pic"
+        "role pic"
+        "cv pic";
     }
 }
 
@@ -43,6 +43,8 @@
 }
 
 .banner_name {
+    font-weight: 800;
+    font-size: xx-large;
     animation: animate 3s linear infinite;
 }
 @keyframes animate {
@@ -68,24 +70,24 @@
 
 
 
-.banner_role_wrapper .static_text {
+.banner_role_wrapper {
     font-size: x-large;
     font-weight: 400;
 }
 
-.banner_role_wrapper .dynamic_text {
+.banner_role_wrapper .banner_role_dynamic_text {
     margin-left: 7px;
     height: 34px;
     line-height: 34px;
     overflow: hidden;
 }
 
-.dynamic_text{
+.banner_role_dynamic_text{
     margin:0;
     padding:0;
 }
 
-.dynamic_text li {
+.banner_role_dynamic_text li {
     color: #2666CF;
     list-style: none;
     font-size: x-large;
@@ -102,11 +104,11 @@
     }
 }
 
-.dynamic_text li span{
+.banner_role_dynamic_text li span{
     position: relative;
 }
 
-.dynamic_text li span::after{
+.banner_role_dynamic_text li span::after{
     content: '';
     position: absolute;
     height: 100%;

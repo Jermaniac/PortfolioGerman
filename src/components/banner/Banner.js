@@ -15,9 +15,8 @@ function Banner() {
           <div>Mi nombre es</div>
           <div className="banner_name">Germán González</div>
         </div>
-        <div class="banner_role_wrapper">
-          <div class="static_text">Soy</div>
-          <ul class="dynamic_text">
+        <div className="banner_role_wrapper">
+          <ul className="banner_role_dynamic_text">
             <li>
               <span>Software Engineer</span>
             </li>
@@ -34,7 +33,7 @@ function Banner() {
           href={pdfGerman}
           download="CV_GERMAN_GONZALEZ_GARZON"
           variant="contained"
-          style={{ backgroundColor: "#2666CF", fontFamily: "Rubik" }}
+          style={{ backgroundColor: "#2666CF", fontFamily: "inherit" }}
         >
           Descargar CV
         </Button>
