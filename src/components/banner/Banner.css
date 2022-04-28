@@ -4,8 +4,9 @@
     grid-template-areas:
     "pic"
     "name"
-    "position"
+    "role"
     "cv";
+    gap: 24px;
     padding: 24px;
 }
 
@@ -13,7 +14,7 @@
     .banner_container {
         grid-template-areas:
         "pic name"
-        "pic position"
+        "pic role"
         "pic cv";
     }
 }
@@ -35,7 +36,8 @@
     display: grid;
     align-items: center;
     justify-content: center;
-
+    font-size: large;
+    font-weight: bold;
     letter-spacing: 5px;
     text-transform: uppercase;
     text-align: center;
@@ -52,9 +54,9 @@
     }
 }
 
-.banner_position {
-    grid-area: position;
-    display: grid;
+.banner_role_wrapper {
+    grid-area: role;
+    display: inline-flex;
     align-items: center;
     justify-content: center;
 }
@@ -65,3 +67,64 @@
     justify-self: center;
     align-self: center;
 }
+
+
+
+.banner_role_wrapper .static_text {
+    font-size: 28px;
+    font-weight: 200;
+}
+
+.banner_role_wrapper .dynamic_text {
+    margin-left: 7.5px;
+    height: 30px;
+    line-height: 30px;
+    overflow: hidden;
+}
+
+.dynamic_text{
+    margin:0;
+    padding:0;
+}
+
+.dynamic_text li {
+    color: #2666CF;
+    list-style: none;
+    font-size: 30px;
+    font-weight: 200;
+    position: relative;
+    top: 0;
+    animation: slide 3s steps(3) infinite;
+}
+
+@keyframes slide
+{
+    100%{
+        top:-90px;
+    }
+}
+
+.dynamic_text li span{
+    position: relative;
+}
+
+.dynamic_text li span::after{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-left: 2px solid black;
+    background: #F7F7F7;
+    left:0;
+    animation: typing 1s steps(10) infinite;
+}
+@keyframes typing
+{
+    40%,60%{
+        left:calc(100% + 5px);
+    }
+    100%{
+        left:0;
+    }
+}
+

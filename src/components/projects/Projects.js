@@ -6,12 +6,20 @@ import CardActions from "@mui/material/CardActions";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Button from "@mui/material/Button";
+import { createTheme } from "@mui/material/styles";
+
+const theme = createTheme({
+  typography: {
+    fontFamily: "Rubik",
+  },
+});
 
 function Projects() {
   return (
     <>
       <Typography
         variant="h3"
+        theme={theme}
         component="div"
         style={{ textAlign: "center", padding: "24px" }}
       >
@@ -27,10 +35,15 @@ function Projects() {
               alt="mood web app gif"
             />
             <CardContent>
-              <Typography gutterBottom variant="h5" component="div">
+              <Typography
+                gutterBottom
+                theme={theme}
+                variant="h5"
+                component="div"
+              >
                 Reconocimiento de expresiones faciales en web
               </Typography>
-              <Typography variant="body2" color="text.secondary">
+              <Typography theme={theme} variant="body2" color="text.secondary">
                 Se trata de una web que reconoce siete expresiones faciales
                 (enfadado, disgustado, asustado, feliz, triste, sorprendido,
                 neutral) a partir de la fotografía de un rostro utilizando una
@@ -38,7 +51,11 @@ function Projects() {
               </Typography>
             </CardContent>
             <CardActions>
-              <Button size="small" href="https://expression-test.vercel.app/">
+              <Button
+                theme={theme}
+                size="small"
+                href="https://expression-test.vercel.app/"
+              >
                 VER PROYECTO
               </Button>
             </CardActions>
@@ -52,10 +69,15 @@ function Projects() {
               alt="mood web app gif"
             />
             <CardContent>
-              <Typography gutterBottom variant="h5" component="div">
+              <Typography
+                gutterBottom
+                theme={theme}
+                variant="h5"
+                component="div"
+              >
                 Mood App
               </Typography>
-              <Typography variant="body2" color="text.secondary">
+              <Typography theme={theme} variant="body2" color="text.secondary">
                 Se trata de una aplicación móvil que reconoce siete expresiones
                 faciales (enfadado, disgustado, asustado, feliz, triste,
                 sorprendido, neutral) a partir de la fotografía de un rostro que
@@ -65,7 +87,11 @@ function Projects() {
               </Typography>
             </CardContent>
             <CardActions>
-              <Button size="small" href="https://github.com/gggarzon/TrabajoFinGradoGerman/tree/master/MoodApp">
+              <Button
+                size="small"
+                theme={theme}
+                href="https://github.com/gggarzon/TrabajoFinGradoGerman/tree/master/MoodApp"
+              >
                 VER PROYECTO
               </Button>
             </CardActions>

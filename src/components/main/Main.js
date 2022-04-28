@@ -2,13 +2,13 @@ import Banner from "../banner/Banner";
 import Projects from "../projects/Projects";
 
 function Main() {
-    return (
-        <>
-            <Banner></Banner>
+  return (
+    <>
+      <Banner></Banner>
 
-            <Projects></Projects>
-        </>
-    );
-  }
+      <Projects></Projects>
+    </>
+  );
+}
 
-  export default Main;
+export default Main;
