@@ -10,9 +10,13 @@ function Banner() {
         <picture className="banner_picture">
           <img className="banner_img" src={germanSelfie} alt="german-selfie" />
         </picture>
-        <div className="banner_name">GERMÁN GONZÁLEZ GARZÓN</div>
+        <div className="banner_name_wrapper">
+          <div>Hola!</div>
+          <div>Mi nombre es</div>
+          <div className="banner_name">Germán González</div>
+        </div>
         <div class="banner_role_wrapper">
-          <div class="static_text"> I'm a</div>
+          <div class="static_text">Soy</div>
           <ul class="dynamic_text">
             <li>
               <span>Software Engineer</span>
