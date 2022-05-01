@@ -3,13 +3,20 @@ import Grid from "@mui/material/Grid";
 import Box from "@mui/material/Box";
 import laptopWithBackground from "../../assets/images/laptop_with_background.jpg";
 
+//TODO: fix background
 function About() {
   return (
     <Box
       className="about_container"
-      style={{ textAlign: "center", padding: "24px", marginTop: "100px" }}
+      style={{
+        textAlign: "center",
+        padding: "24px",
+        marginTop: "96px",
+        display: "flex",
+        justifyContent: "center",
+      }}
     >
-      <Grid container spacing={4}>
+      <Grid container spacing={4} style={{ maxWidth: "1200px" }}>
         <Grid item xs={12} md={6}>
           <div className="about_img_container" style={{ position: "relative" }}>
             <div
@@ -23,8 +30,9 @@ function About() {
             <Box
               component="img"
               sx={{
-                maxWidth: { xs: "100%" },
-                maxHeight: { xs: "100%" },
+                width: "auto",
+                maxWidth: { xs: "100%", md: "450px" },
+                maxHeight: { xs: "100%", md: "300px" },
                 borderRadius: "50px",
                 position: "relative",
               }}

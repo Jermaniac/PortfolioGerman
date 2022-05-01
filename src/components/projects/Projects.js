@@ -12,13 +12,20 @@ function Projects() {
   return (
     <Box
       className="projects_container"
-      style={{ textAlign: "center", padding: "24px", marginTop: "100px" }}
+      style={{
+        textAlign: "center",
+        padding: "24px",
+        marginTop: "96px",
+        display: "flex",
+        justifyContent: "center",
+      }}
     >
-      <Typography variant="h4" component="div">
-        Proyectos
-      </Typography>
-
-      <Grid container spacing={4}>
+      <Grid container spacing={4} style={{ maxWidth: "1200px" }}>
+        <Grid item xs={12}>
+          <Typography variant="h4" component="div">
+            Proyectos
+          </Typography>
+        </Grid>
         <Grid item xs={12} md={6}>
           <Card>
             <CardMedia
