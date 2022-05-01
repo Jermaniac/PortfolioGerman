@@ -10,38 +10,27 @@ function About() {
       className="about_container"
       style={{
         textAlign: "center",
-        padding: "24px",
         marginTop: "96px",
         display: "flex",
         justifyContent: "center",
       }}
+      sx={{ padding: { xs: "24px", md: "48px" } }}
     >
-      <Grid container spacing={4} style={{ maxWidth: "1200px" }}>
-        <Grid item xs={12} md={6}>
-          <div className="about_img_container" style={{ position: "relative" }}>
-            <div
-              className="about_img_background"
-              style={{
-                position: "absolute",
-                backgroundColor: "#2666CF",
-                borderRadius: "50px",
-              }}
-            ></div>
-            <Box
-              component="img"
-              sx={{
-                width: "auto",
-                maxWidth: { xs: "100%", md: "450px" },
-                maxHeight: { xs: "100%", md: "300px" },
-                borderRadius: "50px",
-                position: "relative",
-              }}
-              alt="laptop_with_background"
-              src={laptopWithBackground}
-            />
-          </div>
+      <Grid container style={{ maxWidth: "1200px" }}>
+        <Grid item xs={12} lg={6}>
+          <Box
+            component="img"
+            sx={{
+              width: "auto",
+              maxWidth: { xs: "100%", sm: "400px", lg: "550px" },
+              maxHeight: { xs: "100%", sm: "300px" },
+              borderRadius: "50px",
+            }}
+            alt="laptop_with_background"
+            src={laptopWithBackground}
+          />
         </Grid>
-        <Grid item xs={12} md={6}>
+        <Grid item xs={12} lg={6} sx={{ paddingRight: { lg: "56px" } }}>
           <Typography variant="h4" component="div">
             ¿Quién soy?
           </Typography>
