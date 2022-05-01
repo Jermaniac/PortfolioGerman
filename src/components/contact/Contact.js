@@ -1,8 +1,11 @@
+import Box from "@mui/material/Box";
+
 function Contact() {
   return (
-    <>
-      <div className="contact_container">CONTACT</div>
-    </>
+    <Box
+      className="projects_container"
+      style={{ textAlign: "center", padding: "24px", marginTop: "100px" }}
+    ></Box>
   );
 }
 

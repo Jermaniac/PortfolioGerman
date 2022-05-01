@@ -1,5 +1,5 @@
-import germanSelfie from "../../assets/german-selfie.jpeg";
-import pdfGerman from "../../assets/CVGERMAN2022.pdf";
+import germanSelfiePng from "../../assets/images/german-selfie-png.png";
+import pdfGerman from "../../assets/documents/CVGERMAN2022.pdf";
 import "./Banner.css";
 import Button from "@mui/material/Button";
 
@@ -8,7 +8,11 @@ function Banner() {
     <>
       <div className="banner_container">
         <picture className="banner_picture">
-          <img className="banner_img" src={germanSelfie} alt="german-selfie" />
+          <img
+            className="banner_img"
+            src={germanSelfiePng}
+            alt="german-selfie"
+          />
         </picture>
         <div className="banner_name_wrapper">
           <div>Hola!</div>
