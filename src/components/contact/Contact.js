@@ -11,9 +11,7 @@ function Contact() {
         justifyContent: "center",
       }}
       sx={{ padding: { xs: "24px", md: "48px" } }}
-    >
-      HI
-    </Box>
+    ></Box>
   );
 }
 

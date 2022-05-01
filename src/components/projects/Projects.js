@@ -25,8 +25,8 @@ function Projects() {
             Proyectos
           </Typography>
         </Grid>
-        <Grid item xs={12} md={6}>
-          <Card>
+        <Grid item xs={12} md={6} style={{ display: "flex" }}>
+          <Card style={{ display: "grid" }}>
             <CardMedia
               component="img"
               image={moodWebAppGif}
@@ -50,8 +50,8 @@ function Projects() {
             </CardActions>
           </Card>
         </Grid>
-        <Grid item xs={12} md={6}>
-          <Card>
+        <Grid item xs={12} md={6} style={{ display: "flex" }}>
+          <Card style={{ display: "grid" }}>
             <CardMedia
               component="img"
               image={moodWebAppGif}
