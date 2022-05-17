@@ -1,6 +1,7 @@
 import Typography from "@mui/material/Typography";
 import Grid from "@mui/material/Grid";
 import moodWebAppGif from "../../assets/gifs/moodWebApp.gif";
+import moodMobileAppGif from "../../assets/gifs/moodMobileApp.gif";
 import Card from "@mui/material/Card";
 import CardActions from "@mui/material/CardActions";
 import CardContent from "@mui/material/CardContent";
@@ -31,6 +32,7 @@ function Projects() {
               component="img"
               image={moodWebAppGif}
               alt="mood_web_app_gif"
+              sx={{ maxHeight: { md: "286px" } }}
             />
             <CardContent>
               <Typography gutterBottom variant="h6" component="div">
@@ -54,8 +56,9 @@ function Projects() {
           <Card style={{ display: "grid" }}>
             <CardMedia
               component="img"
-              image={moodWebAppGif}
+              image={moodMobileAppGif}
               alt="mood_android_app_gif"
+              sx={{ maxHeight: { md: "286px" } }}
             />
             <CardContent>
               <Typography gutterBottom variant="h6" component="div">
