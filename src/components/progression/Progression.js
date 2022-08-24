@@ -17,164 +17,166 @@ import Grid from "@mui/material/Grid";
 //TODO: animation collapse
 const Progression = () => {
   return (
-    <>
-      <Box
-        sx={{ position: "relative" }}
-        style={{
-          textAlign: "center",
-          marginTop: "96px",
-          display: "flex",
-          justifyContent: "center",
-        }}
+    <Box
+      sx={{ position: "relative" }}
+      style={{
+        textAlign: "center",
+        marginTop: "96px",
+        display: "flex",
+        justifyContent: "center",
+      }}
+    >
+      <Grid
+        container
+        spacing={4}
+        style={{ maxWidth: "1200px", justifyContent: "center" }}
       >
-        <Grid container spacing={4} style={{ maxWidth: "1200px" }}>
-          <Grid item xs={12}>
-            <Typography variant="h4" component="div">
-              Trayectoria
-            </Typography>
-          </Grid>
-          <Grid item xs={12} md={6} style={{ display: "flex" }}>
-            <Collapse in={true} orientation="vertical">
-              <Timeline position="alternate">
-                <TimelineItem>
-                  <TimelineOppositeContent
-                    sx={{ m: "auto 0" }}
-                    align="right"
-                    variant="body2"
-                    color="text.secondary"
-                  >
-                    MAYO 2022 - ACTUALIDAD
-                  </TimelineOppositeContent>
-                  <TimelineSeparator>
-                    <TimelineConnector />
-                    <TimelineDot color="primary" variant="outlined">
-                      <BusinessCenterIcon />
-                    </TimelineDot>
-                    <TimelineConnector />
-                  </TimelineSeparator>
-                  <TimelineContent sx={{ py: "12px", px: 2 }}>
-                    <Typography variant="h6" component="span">
-                      Scalian
-                    </Typography>
-                    <Typography>Big Data Developer</Typography>
-                  </TimelineContent>
-                </TimelineItem>
-                <TimelineItem>
-                  <TimelineOppositeContent
-                    sx={{ m: "auto 0" }}
-                    variant="body2"
-                    color="text.secondary"
-                  >
-                    ENERO 2022 - MAYO 2022
-                  </TimelineOppositeContent>
-                  <TimelineSeparator>
-                    <TimelineConnector />
-                    <TimelineDot color="primary">
-                      <BusinessCenterIcon />
-                    </TimelineDot>
-                    <TimelineConnector />
-                  </TimelineSeparator>
-                  <TimelineContent sx={{ py: "12px", px: 2 }}>
-                    <Typography variant="h6" component="span">
-                      Indra
-                    </Typography>
-                    <Typography>Backend Developer</Typography>
-                  </TimelineContent>
-                </TimelineItem>
-                <TimelineItem>
-                  <TimelineOppositeContent
-                    sx={{ m: "auto 0" }}
-                    variant="body2"
-                    color="text.secondary"
-                  >
-                    FEBRERO 2021 - NOVIEMBRE 2021
-                  </TimelineOppositeContent>
-                  <TimelineSeparator>
-                    <TimelineConnector />
-                    <TimelineDot color="primary" variant="outlined">
-                      <BusinessCenterIcon />
-                    </TimelineDot>
-                    <TimelineConnector sx={{ bgcolor: "primary" }} />
-                  </TimelineSeparator>
-                  <TimelineContent sx={{ py: "12px", px: 2 }}>
-                    <Typography variant="h6" component="span">
-                      Capgemini
-                    </Typography>
-                    <Typography>Frontend Developer</Typography>
-                  </TimelineContent>
-                </TimelineItem>
-                <TimelineItem>
-                  <TimelineOppositeContent
-                    sx={{ m: "auto 0" }}
-                    variant="body2"
-                    color="text.secondary"
-                  >
-                    OCTUBRE 2020 - FEBRERO 2021
-                  </TimelineOppositeContent>
-                  <TimelineSeparator>
-                    <TimelineConnector sx={{ bgcolor: "primary" }} />
-                    <TimelineDot color="primary">
-                      <BusinessCenterIcon />
-                    </TimelineDot>
-                    <TimelineConnector />
-                  </TimelineSeparator>
-                  <TimelineContent sx={{ py: "12px", px: 2 }}>
-                    <Typography variant="h6" component="span">
-                      Sermicro
-                    </Typography>
-                    <Typography>Técnico de sistemas</Typography>
-                  </TimelineContent>
-                </TimelineItem>
-                <TimelineItem>
-                  <TimelineOppositeContent
-                    sx={{ m: "auto 0" }}
-                    variant="body2"
-                    color="text.secondary"
-                  >
-                    DICIEMBRE 2019 - MARZO 2020
-                  </TimelineOppositeContent>
-                  <TimelineSeparator>
-                    <TimelineConnector sx={{ bgcolor: "primary" }} />
-                    <TimelineDot color="primary" variant="outlined">
-                      <BusinessCenterIcon />
-                    </TimelineDot>
-                    <TimelineConnector />
-                  </TimelineSeparator>
-                  <TimelineContent sx={{ py: "12px", px: 2 }}>
-                    <Typography variant="h6" component="span">
-                      Babel
-                    </Typography>
-                    <Typography>Backend Developer / Intern</Typography>
-                  </TimelineContent>
-                </TimelineItem>
-                <TimelineItem>
-                  <TimelineOppositeContent
-                    sx={{ m: "auto 0" }}
-                    variant="body2"
-                    color="text.secondary"
-                  >
-                    SEPTIEMBRE 2016 - JULIO 2020
-                  </TimelineOppositeContent>
-                  <TimelineSeparator>
-                    <TimelineConnector sx={{ bgcolor: "primary" }} />
-                    <TimelineDot color="primary">
-                      <SchoolIcon />
-                    </TimelineDot>
-                    <TimelineConnector />
-                  </TimelineSeparator>
-                  <TimelineContent sx={{ py: "12px", px: 2 }}>
-                    <Typography variant="h6" component="span">
-                      U.P.M
-                    </Typography>
-                    <Typography>Estudiante</Typography>
-                  </TimelineContent>
-                </TimelineItem>
-              </Timeline>
-            </Collapse>
-          </Grid>
+        <Grid item xs={12}>
+          <Typography variant="h4" component="div">
+            Trayectoria
+          </Typography>
         </Grid>
-      </Box>
-    </>
+        <Grid item xs={12} md={6} style={{ display: "flex" }}>
+          <Collapse in={true} orientation="vertical">
+            <Timeline position="alternate">
+              <TimelineItem>
+                <TimelineOppositeContent
+                  sx={{ m: "auto 0" }}
+                  align="right"
+                  variant="body2"
+                  color="text.secondary"
+                >
+                  MAYO 2022 - ACTUALIDAD
+                </TimelineOppositeContent>
+                <TimelineSeparator>
+                  <TimelineConnector />
+                  <TimelineDot color="primary" variant="outlined">
+                    <BusinessCenterIcon />
+                  </TimelineDot>
+                  <TimelineConnector />
+                </TimelineSeparator>
+                <TimelineContent sx={{ py: "12px", px: 2 }}>
+                  <Typography variant="h6" component="span">
+                    Scalian
+                  </Typography>
+                  <Typography>Big Data Developer</Typography>
+                </TimelineContent>
+              </TimelineItem>
+              <TimelineItem>
+                <TimelineOppositeContent
+                  sx={{ m: "auto 0" }}
+                  variant="body2"
+                  color="text.secondary"
+                >
+                  ENERO 2022 - MAYO 2022
+                </TimelineOppositeContent>
+                <TimelineSeparator>
+                  <TimelineConnector />
+                  <TimelineDot color="primary">
+                    <BusinessCenterIcon />
+                  </TimelineDot>
+                  <TimelineConnector />
+                </TimelineSeparator>
+                <TimelineContent sx={{ py: "12px", px: 2 }}>
+                  <Typography variant="h6" component="span">
+                    Indra
+                  </Typography>
+                  <Typography>Backend Developer</Typography>
+                </TimelineContent>
+              </TimelineItem>
+              <TimelineItem>
+                <TimelineOppositeContent
+                  sx={{ m: "auto 0" }}
+                  variant="body2"
+                  color="text.secondary"
+                >
+                  FEBRERO 2021 - NOVIEMBRE 2021
+                </TimelineOppositeContent>
+                <TimelineSeparator>
+                  <TimelineConnector />
+                  <TimelineDot color="primary" variant="outlined">
+                    <BusinessCenterIcon />
+                  </TimelineDot>
+                  <TimelineConnector sx={{ bgcolor: "primary" }} />
+                </TimelineSeparator>
+                <TimelineContent sx={{ py: "12px", px: 2 }}>
+                  <Typography variant="h6" component="span">
+                    Capgemini
+                  </Typography>
+                  <Typography>Frontend Developer</Typography>
+                </TimelineContent>
+              </TimelineItem>
+              <TimelineItem>
+                <TimelineOppositeContent
+                  sx={{ m: "auto 0" }}
+                  variant="body2"
+                  color="text.secondary"
+                >
+                  OCTUBRE 2020 - FEBRERO 2021
+                </TimelineOppositeContent>
+                <TimelineSeparator>
+                  <TimelineConnector sx={{ bgcolor: "primary" }} />
+                  <TimelineDot color="primary">
+                    <BusinessCenterIcon />
+                  </TimelineDot>
+                  <TimelineConnector />
+                </TimelineSeparator>
+                <TimelineContent sx={{ py: "12px", px: 2 }}>
+                  <Typography variant="h6" component="span">
+                    Sermicro
+                  </Typography>
+                  <Typography>Técnico de sistemas</Typography>
+                </TimelineContent>
+              </TimelineItem>
+              <TimelineItem>
+                <TimelineOppositeContent
+                  sx={{ m: "auto 0" }}
+                  variant="body2"
+                  color="text.secondary"
+                >
+                  DICIEMBRE 2019 - MARZO 2020
+                </TimelineOppositeContent>
+                <TimelineSeparator>
+                  <TimelineConnector sx={{ bgcolor: "primary" }} />
+                  <TimelineDot color="primary" variant="outlined">
+                    <BusinessCenterIcon />
+                  </TimelineDot>
+                  <TimelineConnector />
+                </TimelineSeparator>
+                <TimelineContent sx={{ py: "12px", px: 2 }}>
+                  <Typography variant="h6" component="span">
+                    Babel
+                  </Typography>
+                  <Typography>Backend Developer / Intern</Typography>
+                </TimelineContent>
+              </TimelineItem>
+              <TimelineItem>
+                <TimelineOppositeContent
+                  sx={{ m: "auto 0" }}
+                  variant="body2"
+                  color="text.secondary"
+                >
+                  SEPTIEMBRE 2016 - JULIO 2020
+                </TimelineOppositeContent>
+                <TimelineSeparator>
+                  <TimelineConnector sx={{ bgcolor: "primary" }} />
+                  <TimelineDot color="primary">
+                    <SchoolIcon />
+                  </TimelineDot>
+                  <TimelineConnector />
+                </TimelineSeparator>
+                <TimelineContent sx={{ py: "12px", px: 2 }}>
+                  <Typography variant="h6" component="span">
+                    U.P.M
+                  </Typography>
+                  <Typography>Estudiante</Typography>
+                </TimelineContent>
+              </TimelineItem>
+            </Timeline>
+          </Collapse>
+        </Grid>
+      </Grid>
+    </Box>
   );
 };
 
