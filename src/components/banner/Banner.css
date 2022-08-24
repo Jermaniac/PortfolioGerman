@@ -51,7 +51,7 @@
 @keyframes animate {
     100%
     {
-        color: #1976d2;
+        color: #1565c0;
     }
 }
 
@@ -89,7 +89,7 @@
 }
 
 .banner_role_dynamic_text li {
-    color: #1976d2;
+    color: #1565c0;
     list-style: none;
     font-size: x-large;
     font-weight: 400;

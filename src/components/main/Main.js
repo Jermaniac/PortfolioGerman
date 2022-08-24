@@ -2,13 +2,13 @@ import Banner from "../banner/Banner";
 import Projects from "../projects/Projects";
 import About from "../about/About";
 import Contact from "../contact/Contact";
-import CustomizedProgressBars from "../progression/Progression";
+import Progression from "../progression/Progression";
 
 const Main = () => {
   return (
     <>
       <Banner></Banner>
-      {/* <CustomizedProgressBars></CustomizedProgressBars> */}
+      <Progression></Progression>
       <About></About>
       <Projects></Projects>
       <Contact></Contact>
