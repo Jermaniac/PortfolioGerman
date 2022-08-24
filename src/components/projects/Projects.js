@@ -9,13 +9,14 @@ import CardMedia from "@mui/material/CardMedia";
 import Button from "@mui/material/Button";
 import Box from "@mui/material/Box";
 
-function Projects() {
+const Projects = () => {
   return (
     <Box
       className="projects_container"
       style={{
         textAlign: "center",
         display: "flex",
+        marginTop: "96px",
         justifyContent: "center",
       }}
       sx={{ padding: { xs: "24px", md: "48px" } }}
@@ -38,15 +39,20 @@ function Projects() {
               <Typography gutterBottom variant="h6" component="div">
                 Reconocimiento de expresiones faciales en web
               </Typography>
-              <Typography variant="body1" color="text.secondary">
+              <Typography variant="body1" color="text">
                 Se trata de una web que reconoce siete expresiones faciales
                 (enfadado, disgustado, asustado, feliz, triste, sorprendido,
                 neutral) a partir de la fotografía de un rostro utilizando una
                 red neuronal convolucional o CNN.
               </Typography>
             </CardContent>
-            <CardActions>
-              <Button size="small" href="https://expression-test.vercel.app/">
+            <CardActions style={{ justifyContent: "center" }}>
+              <Button
+                size="small"
+                href="https://expression-test.vercel.app/"
+                variant="contained"
+                color="primary"
+              >
                 VER PROYECTO
               </Button>
             </CardActions>
@@ -64,7 +70,7 @@ function Projects() {
               <Typography gutterBottom variant="h6" component="div">
                 Mood App
               </Typography>
-              <Typography variant="body1" color="text.secondary">
+              <Typography variant="body1" color="text">
                 Se trata de una aplicación móvil que reconoce siete expresiones
                 faciales (enfadado, disgustado, asustado, feliz, triste,
                 sorprendido, neutral) a partir de la fotografía de un rostro que
@@ -73,10 +79,12 @@ function Projects() {
                 o CNN.
               </Typography>
             </CardContent>
-            <CardActions>
+            <CardActions style={{ justifyContent: "center" }}>
               <Button
                 size="small"
                 href="https://github.com/gggarzon/TrabajoFinGradoGerman/tree/master/MoodApp"
+                variant="contained"
+                color="primary"
               >
                 VER PROYECTO
               </Button>
@@ -86,6 +94,6 @@ function Projects() {
       </Grid>
     </Box>
   );
-}
+};
 
 export default Projects;

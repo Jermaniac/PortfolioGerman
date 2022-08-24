@@ -2,15 +2,22 @@ import Header from "./components/header/Header";
 
 import "./App.css";
 import Main from "./components/main/Main";
+import { ThemeProvider } from "@mui/material/styles";
+import { CssBaseline } from "@mui/material";
 
-function App() {
+import { appTheme } from "./themes/theme";
+
+const App = () => {
   return (
-    <div className="App">
-      <Header></Header>
-      <Main></Main>
-      {/* <Footer></Footer> */}
-    </div>
+    <ThemeProvider theme={appTheme}>
+      <CssBaseline enableColorScheme />
+      <div className="App">
+        <Header></Header>
+        <Main></Main>
+        {/* <Footer></Footer> */}
+      </div>
+    </ThemeProvider>
   );
-}
+};
 
 export default App;

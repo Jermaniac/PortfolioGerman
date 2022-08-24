@@ -51,7 +51,7 @@
 @keyframes animate {
     100%
     {
-        color:#2666CF;
+        color: #1976d2;
     }
 }
 
@@ -89,7 +89,7 @@
 }
 
 .banner_role_dynamic_text li {
-    color: #2666CF;
+    color: #1976d2;
     list-style: none;
     font-size: x-large;
     font-weight: 400;
@@ -115,7 +115,7 @@
     height: 100%;
     width: 100%;
     border-left: 2px solid black;
-    background: #F7F7F7;
+    background: #FFFF;
     left:0;
     animation: typing 1s steps(10) infinite;
 }

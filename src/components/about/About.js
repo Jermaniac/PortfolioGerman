@@ -4,7 +4,7 @@ import Box from "@mui/material/Box";
 import laptopWithBackground from "../../assets/images/laptop_with_background.jpg";
 
 //TODO: fix background
-function About() {
+const About = () => {
   return (
     <Box
       className="about_container"
@@ -51,6 +51,6 @@ function About() {
       </Grid>
     </Box>
   );
-}
+};
 
 export default About;

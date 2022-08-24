@@ -13,7 +13,7 @@ import MoreIcon from "@mui/icons-material/MoreVert";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
 
-export default function Header() {
+const Header = () => {
   const [mobileMoreAnchorEl, setMobileMoreAnchorEl] = useState(null);
 
   const isMobileMenuOpen = Boolean(mobileMoreAnchorEl);
@@ -71,12 +71,7 @@ export default function Header() {
 
   return (
     <Box className="header_container" sx={{ flexGrow: 1 }}>
-      <AppBar
-        position="static"
-        style={{
-          backgroundColor: "#2666CF",
-        }}
-      >
+      <AppBar position="static" color="primary">
         <Toolbar>
           <Typography
             variant="h5"
@@ -98,7 +93,7 @@ export default function Header() {
               aria-controls={mobileMenuId}
               aria-haspopup="true"
               onClick={handleMobileMenuOpen}
-              color="inherit"
+              color="terciary"
             >
               <MoreIcon />
             </IconButton>
@@ -108,4 +103,6 @@ export default function Header() {
       {renderMobileMenu}
     </Box>
   );
-}
+};
+
+export default Header;

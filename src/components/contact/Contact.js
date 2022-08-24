@@ -1,6 +1,6 @@
 import Box from "@mui/material/Box";
 
-function Contact() {
+const Contact = () => {
   return (
     <Box
       className="projects_container"
@@ -13,6 +13,6 @@ function Contact() {
       sx={{ padding: { xs: "24px", md: "48px" } }}
     ></Box>
   );
-}
+};
 
 export default Contact;

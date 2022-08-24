@@ -3,13 +3,13 @@ import pdfGerman from "../../assets/documents/CVGERMAN2022.pdf";
 import "./Banner.css";
 import Button from "@mui/material/Button";
 
-function Banner() {
+const Banner = () => {
   return (
     <div
       className="banner_container"
       style={{
         textAlign: "center",
-        marginTop: "96px",
+        marginTop: "48px",
       }}
     >
       <picture className="banner_picture">
@@ -38,12 +38,12 @@ function Banner() {
         href={pdfGerman}
         download="CV_GERMAN_GONZALEZ_GARZON"
         variant="contained"
-        style={{ backgroundColor: "#2666CF", fontFamily: "inherit" }}
+        color="primary"
       >
         Descargar CV
       </Button>
     </div>
   );
-}
+};
 
 export default Banner;
