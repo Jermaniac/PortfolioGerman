@@ -18,25 +18,21 @@ import Grid from "@mui/material/Grid";
 const Progression = () => {
   return (
     <Box
-      sx={{ position: "relative" }}
       style={{
         textAlign: "center",
-        marginTop: "96px",
+        width: "100%",
+        margin: "96px auto",
         display: "flex",
         justifyContent: "center",
       }}
     >
-      <Grid
-        container
-        spacing={4}
-        style={{ maxWidth: "1200px", justifyContent: "center" }}
-      >
+      <Grid container style={{ maxWidth: "1200px" }}>
         <Grid item xs={12}>
           <Typography variant="h4" component="div">
             Trayectoria
           </Typography>
         </Grid>
-        <Grid item xs={12} md={6} style={{ display: "flex" }}>
+        <Grid item xs={12}>
           <Collapse in={true} orientation="vertical">
             <Timeline position="alternate">
               <TimelineItem>

@@ -16,7 +16,7 @@ const Projects = () => {
       style={{
         textAlign: "center",
         display: "flex",
-        marginTop: "96px",
+        margin: "96px auto",
         justifyContent: "center",
       }}
       sx={{ padding: { xs: "24px", md: "48px" } }}

@@ -10,7 +10,7 @@ const About = () => {
       className="about_container"
       style={{
         textAlign: "center",
-        marginTop: "96px",
+        margin: "96px auto",
         display: "flex",
         justifyContent: "center",
       }}
