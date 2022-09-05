@@ -1,18 +1,7 @@
 import Box from "@mui/material/Box";
 
 const Contact = () => {
-  return (
-    <Box
-      className="projects_container"
-      style={{
-        textAlign: "center",
-        marginTop: "96px",
-        display: "flex",
-        justifyContent: "center",
-      }}
-      sx={{ padding: { xs: "24px", md: "48px" } }}
-    ></Box>
-  );
+  return <Box className="contact_container" style={{}}></Box>;
 };
 
 export default Contact;

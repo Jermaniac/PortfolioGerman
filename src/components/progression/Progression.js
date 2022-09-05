@@ -18,6 +18,7 @@ import Grid from "@mui/material/Grid";
 const Progression = () => {
   return (
     <Box
+      className="progression_container"
       style={{
         textAlign: "center",
         width: "100%",

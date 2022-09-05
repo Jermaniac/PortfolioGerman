@@ -2,6 +2,7 @@ import Header from "./components/header/Header";
 
 import "./App.css";
 import Main from "./components/main/Main";
+import Footer from "./components/footer/Footer";
 import { ThemeProvider } from "@mui/material/styles";
 import { CssBaseline } from "@mui/material";
 
@@ -14,7 +15,7 @@ const App = () => {
       <div className="App">
         <Header></Header>
         <Main></Main>
-        {/* <Footer></Footer> */}
+        <Footer></Footer>
       </div>
     </ThemeProvider>
   );
