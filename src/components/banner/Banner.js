@@ -7,54 +7,43 @@ import Box from "@mui/material/Box";
 const Banner = () => {
   return (
     <Box
+      className="banner_container"
       style={{
-        width: "100%",
         margin: "56px auto",
-        textAlign: "-webkit-center",
+        textAlign: "center",
+        maxWidth: "1200px",
       }}
     >
-      <div
-        className="banner_container"
-        style={{
-          textAlign: "center",
-          maxWidth: "1200px",
-        }}
-      >
-        <picture className="banner_picture">
-          <img
-            className="banner_img"
-            src={germanSelfiePng}
-            alt="german-selfie"
-          />
-        </picture>
-        <div className="banner_name_wrapper">
-          <div>Hola!</div>
-          <div>Mi nombre es</div>
-          <div className="banner_name">Germán González</div>
-        </div>
-        <div className="banner_role_wrapper">
-          <ul className="banner_role_dynamic_text">
-            <li>
-              <span>Software Engineer</span>
-            </li>
-            <li>
-              <span>Web Developer</span>
-            </li>
-            <li>
-              <span>Big Data Developer</span>
-            </li>
-          </ul>
-        </div>
-        <Button
-          className="banner_cv"
-          href={pdfGerman}
-          download="CV_GERMAN_GONZALEZ_GARZON"
-          variant="contained"
-          color="primary"
-        >
-          Descargar CV
-        </Button>
+      <picture className="banner_picture">
+        <img className="banner_img" src={germanSelfiePng} alt="german-selfie" />
+      </picture>
+      <div className="banner_name_wrapper">
+        <div>Hola!</div>
+        <div>Mi nombre es</div>
+        <div className="banner_name">Germán González</div>
       </div>
+      <div className="banner_role_wrapper">
+        <ul className="banner_role_dynamic_text">
+          <li>
+            <span>Software Engineer</span>
+          </li>
+          <li>
+            <span>Web Developer</span>
+          </li>
+          <li>
+            <span>Big Data Developer</span>
+          </li>
+        </ul>
+      </div>
+      <Button
+        className="banner_cv"
+        href={pdfGerman}
+        download="CV_GERMAN_GONZALEZ_GARZON"
+        variant="contained"
+        color="primary"
+      >
+        Descargar CV
+      </Button>
     </Box>
   );
 };
