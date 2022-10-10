@@ -2,6 +2,7 @@ import Typography from "@mui/material/Typography";
 import Grid from "@mui/material/Grid";
 import moodWebAppGif from "../../assets/gifs/moodWebApp.gif";
 import moodMobileAppGif from "../../assets/gifs/moodMobileApp.gif";
+import pricingCryptoAppGif from "../../assets/gifs/pricingCryptoApp.gif";
 import Card from "@mui/material/Card";
 import CardActions from "@mui/material/CardActions";
 import CardContent from "@mui/material/CardContent";
@@ -83,6 +84,36 @@ const Projects = () => {
               <Button
                 size="small"
                 href="https://github.com/gggarzon/TrabajoFinGradoGerman/tree/master/MoodApp"
+                variant="contained"
+                color="primary"
+              >
+                VER PROYECTO
+              </Button>
+            </CardActions>
+          </Card>
+        </Grid>
+        <Grid item xs={12} md={6} style={{ display: "flex" }}>
+          <Card style={{ display: "grid" }}>
+            <CardMedia
+              component="img"
+              image={pricingCryptoAppGif}
+              alt="crypto_pricing_app_gif"
+              sx={{ maxHeight: { md: "286px" } }}
+            />
+            <CardContent>
+              <Typography gutterBottom variant="h6" component="div">
+                Crypto Pricing App
+              </Typography>
+              <Typography variant="body1" color="text">
+                Se trata de una app muy simple que muestra los precios en tiempo
+                real de 10 criptomonedas. Los datos usados pertenecen a la api
+                de Messari.
+              </Typography>
+            </CardContent>
+            <CardActions style={{ justifyContent: "center" }}>
+              <Button
+                size="small"
+                href="https://test-ms.vercel.app/"
                 variant="contained"
                 color="primary"
               >
