@@ -87,7 +87,7 @@ const Progression = () => {
                   variant="body2"
                   color="text.secondary"
                 >
-                  FEBRERO 2021 - NOVIEMBRE 2021
+                  FEBRERO 2021 - DICIEMBRE 2021
                 </TimelineOppositeContent>
                 <TimelineSeparator>
                   <TimelineConnector />
