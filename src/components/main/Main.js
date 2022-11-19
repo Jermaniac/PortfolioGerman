@@ -11,6 +11,7 @@ const Main = () => {
       <Progression></Progression>
       <About></About>
       <Projects></Projects>
+      <Contact></Contact>
     </>
   );
 };
