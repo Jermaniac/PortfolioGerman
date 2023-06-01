@@ -7,7 +7,7 @@ import Box from "@mui/material/Box";
 const Banner = () => {
   return (
     <Box
-      className="banner_containe"
+      className="banner_container"
       style={{
         margin: "56px auto",
         textAlign: "center",
