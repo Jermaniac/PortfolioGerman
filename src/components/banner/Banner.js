@@ -9,7 +9,7 @@ const Banner = () => {
     <Box
       className="banner_container"
       style={{
-        margin: "60px auto",
+        margin: "60px auto"
         textAlign: "center",
         maxWidth: "1200px",
       }}
