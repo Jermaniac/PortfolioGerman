@@ -164,7 +164,7 @@ const Progression = () => {
                 </TimelineSeparator>
                 <TimelineContent sx={{ py: "12px", px: 2 }}>
                   <Typography variant="h6" component="span">
-                    U.P.M
+                    Universidad Politécnica de Madrid
                   </Typography>
                   <Typography>Estudiante</Typography>
                 </TimelineContent>
