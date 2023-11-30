@@ -26,9 +26,15 @@
     align-items: center;
 }
 .banner_img {
-    max-width: 250px;
-    max-height: 250px;
     border-radius: 50%;
+    max-width: 500px;
+    max-height: 500px;
+}
+
+@media (max-width:640px) {
+    .banner_img {
+        max-width: 250px;
+    }
 }
 
 .banner_name_wrapper {
@@ -36,7 +42,7 @@
     display: grid;
     align-items: center;
     justify-content: center;
-    font-size: x-large;
+    font-size: xxx-large;
     font-weight: 400;
     letter-spacing: 4px;
     text-align: center;
@@ -114,7 +120,7 @@
     height: 100%;
     width: 100%;
     border-left: 2px solid black;
-    background: #FFFF;
+    background: #212121;
     left:0;
     animation: typing 1s steps(10) infinite;
 }

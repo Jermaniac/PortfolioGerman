@@ -1,3 +1,4 @@
+import React from "react";
 import Typography from "@mui/material/Typography";
 import Grid from "@mui/material/Grid";
 import Box from "@mui/material/Box";
@@ -31,16 +32,16 @@ const About = () => {
           />
         </Grid>
         <Grid item xs={12} lg={6} sx={{ paddingRight: { lg: "56px" } }}>
-          <Typography variant="h4" component="div">
+          <Typography variant="h3" component="div">
             ¿Quién soy?
           </Typography>
           <br />
           <Typography variant="body1" component="div">
             Graduado en Ingeniería del Software por la Universidad Politécnica
-            de Madrid. Tengo experiencia como desarrollador web tanto en la
-            parte frontend con JavaScript (React/Angular) como en la parte
-            backend con Java (SpringBoot). Actualmente me dedico al desarrollo
-            Software orientado al Big Data.
+            de Madrid. Aunque he trabajado en proyectos Big Data con tecnologías
+            como Spark y Scala. Actualmente me dedico al desarrollo web con
+            JavaScript tanto en la parte frontend (React/Angular) como en la
+            parte backend (NodeJS).
           </Typography>
           <br />
           <Typography variant="h6" component="div">

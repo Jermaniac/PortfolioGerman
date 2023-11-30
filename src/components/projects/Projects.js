@@ -1,3 +1,5 @@
+import React from "react";
+
 import Typography from "@mui/material/Typography";
 import Grid from "@mui/material/Grid";
 import moodWebAppGif from "../../assets/gifs/moodWebApp.gif";
@@ -24,7 +26,7 @@ const Projects = () => {
     >
       <Grid container spacing={4} style={{ maxWidth: "1200px" }}>
         <Grid item xs={12}>
-          <Typography variant="h4" component="div">
+          <Typography variant="h3" component="div">
             Proyectos
           </Typography>
         </Grid>
@@ -37,10 +39,10 @@ const Projects = () => {
               sx={{ maxHeight: { md: "286px" } }}
             />
             <CardContent>
-              <Typography gutterBottom variant="h6" component="div">
+              <Typography gutterBottom variant="h6" component="div" color="text.terciary">
                 Reconocimiento de expresiones faciales en web
               </Typography>
-              <Typography variant="body1" color="text">
+              <Typography variant="body1" color="text.terciary" >
                 Se trata de una web que reconoce siete expresiones faciales
                 (enfadado, disgustado, asustado, feliz, triste, sorprendido,
                 neutral) a partir de la fotografía de un rostro utilizando una
@@ -68,10 +70,10 @@ const Projects = () => {
               sx={{ maxHeight: { md: "286px" } }}
             />
             <CardContent>
-              <Typography gutterBottom variant="h6" component="div">
+              <Typography gutterBottom variant="h6" component="div" color="text.terciary">
                 Mood App
               </Typography>
-              <Typography variant="body1" color="text">
+              <Typography variant="body1" color="text.terciary">
                 Se trata de una aplicación móvil que reconoce siete expresiones
                 faciales (enfadado, disgustado, asustado, feliz, triste,
                 sorprendido, neutral) a partir de la fotografía de un rostro que
@@ -101,10 +103,10 @@ const Projects = () => {
               sx={{ maxHeight: { md: "286px" } }}
             />
             <CardContent>
-              <Typography gutterBottom variant="h6" component="div">
+              <Typography gutterBottom variant="h6" component="div" color="text.terciary">
                 Crypto Pricing App
               </Typography>
-              <Typography variant="body1" color="text">
+              <Typography variant="body1" color="text.terciary">
                 Se trata de una app muy simple que muestra los precios en tiempo
                 real de 10 criptomonedas. Los datos usados pertenecen a la api
                 de Messari.

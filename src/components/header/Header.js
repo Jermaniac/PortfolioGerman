@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React, { useState } from "react";
 
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
@@ -78,7 +78,7 @@ const Header = () => {
             component="div"
             sx={{ display: { xs: "none", sm: "block" } }}
           >
-            Germán González Garzó
+            Germán González Garzón
           </Typography>
           <Box sx={{ flexGrow: 1 }} />
           <Box sx={{ display: { xs: "none", md: "flex" } }}>

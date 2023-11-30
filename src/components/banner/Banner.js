@@ -1,3 +1,4 @@
+import React from "react";
 import germanSelfiePng from "../../assets/images/german-selfie-png.png";
 import pdfGerman from "../../assets/documents/CVGERMAN2022.pdf";
 import "./Banner.css";
@@ -9,7 +10,7 @@ const Banner = () => {
     <Box
       className="banner_container"
       style={{
-        margin: "60px auto",
+        margin: "60px auto 260px auto",
         textAlign: "center",
         maxWidth: "1200px",
       }}

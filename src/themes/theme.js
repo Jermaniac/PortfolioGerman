@@ -1,5 +1,4 @@
-import { blue } from "@mui/material/colors";
-import { grey } from "@mui/material/colors";
+import { blue, grey } from "@mui/material/colors";
 
 import { createTheme } from "@mui/material/styles";
 
@@ -9,7 +8,7 @@ export const appTheme = createTheme({
   },
   palette: {
     background: {
-      default: blue[0],
+      default: grey[900],
     },
     primary: {
       main: blue[800],
@@ -21,7 +20,9 @@ export const appTheme = createTheme({
       main: blue[50],
     },
     text: {
-      primary: grey[900],
+      primary: blue[50],
+      secondary: blue[500],
+      terciary: grey[900]
     },
   },
 });

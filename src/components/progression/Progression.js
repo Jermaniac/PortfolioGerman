@@ -1,4 +1,4 @@
-import * as React from "react";
+import React from "react";
 import Timeline from "@mui/lab/Timeline";
 import TimelineItem from "@mui/lab/TimelineItem";
 import TimelineSeparator from "@mui/lab/TimelineSeparator";
@@ -29,13 +29,36 @@ const Progression = () => {
     >
       <Grid container style={{ maxWidth: "1200px" }}>
         <Grid item xs={12}>
-          <Typography variant="h4" component="div">
+          <Typography variant="h3" component="div">
             Trayectoria
           </Typography>
         </Grid>
         <Grid item xs={12}>
           <Collapse in={true} orientation="vertical">
             <Timeline position="alternate">
+            <TimelineItem>
+                <TimelineOppositeContent
+                  sx={{ m: "auto 0" }}
+                  align="right"
+                  variant="body2"
+                  color="text.secondary"
+                >
+                  MARZO 2023 - ACTUALIDAD
+                </TimelineOppositeContent>
+                <TimelineSeparator>
+                  <TimelineConnector />
+                  <TimelineDot color="primary" variant="outlined">
+                    <BusinessCenterIcon />
+                  </TimelineDot>
+                  <TimelineConnector />
+                </TimelineSeparator>
+                <TimelineContent sx={{ py: "12px", px: 2 }}>
+                  <Typography variant="h6" component="span">
+                    Santander Consumer Global Services
+                  </Typography>
+                  <Typography>Full-Stack Developer</Typography>
+                </TimelineContent>
+              </TimelineItem>
               <TimelineItem>
                 <TimelineOppositeContent
                   sx={{ m: "auto 0" }}
@@ -43,7 +66,7 @@ const Progression = () => {
                   variant="body2"
                   color="text.secondary"
                 >
-                  MAYO 2022 - ACTUALIDAD
+                  MAYO 2022 - MARZO 2023
                 </TimelineOppositeContent>
                 <TimelineSeparator>
                   <TimelineConnector />

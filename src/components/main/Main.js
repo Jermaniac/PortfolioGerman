@@ -1,3 +1,5 @@
+import React from "react";
+
 import Banner from "../banner/Banner";
 import Projects from "../projects/Projects";
 import About from "../about/About";
