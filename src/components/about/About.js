@@ -14,11 +14,6 @@ const About = () => {
         margin: "60px auto 260px auto",
         display: "flex",
         justifyContent: "center",
-/*         maxWidth: "1200px",
-        border: "2px solid",
-        borderRadius: "10px",
-        bgcolor: "background.lighter",
-        borderColor: "border.default", */
         padding: { xs: "24px", md: "48px" },
       }}
     >
@@ -28,8 +23,8 @@ const About = () => {
             component="img"
             sx={{
               width: "auto",
-              maxWidth: { xs: "100%", sm: "400px", lg: "550px" },
-              maxHeight: { xs: "100%", sm: "300px" },
+              maxWidth: { xs: "100%", sm: "312px", md: "400px" },
+              maxHeight: { xs: "100%", sm: "312px", md: "400px" },
               borderRadius: "50px",
             }}
             alt="laptop_with_background"

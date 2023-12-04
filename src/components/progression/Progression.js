@@ -50,32 +50,44 @@ const Progression = () => {
             Trayectoria
           </Typography>
         </Grid>
-        <Grid item xs={12} style={{ display: "flex", justifyContent:"center"}}>
+        <Grid
+          item
+          xs={12}
+          style={{ display: "flex", justifyContent: "center" }}
+        >
           <Collapse in={true} orientation="vertical">
             <Timeline>
               {experienceItems
                 ? experienceItems.map((experienceItem) => (
                     <TimelineItem key={experienceItem.id}>
                       <TimelineOppositeContent
-                        sx={{ m: "auto 0" }}
-                        align="right"
+                        sx={{ m: "auto 0", textAlign: "right" }}
                         variant="subtitle1"
                         color="text.secondary"
                       >
                         {experienceItem.period}
                       </TimelineOppositeContent>
                       <TimelineSeparator>
-                        <TimelineConnector />
                         <TimelineDot color="primary" variant="outlined">
-                          { experienceItem.education ? <SchoolIcon color="primary"/> : <BusinessCenterIcon color="primary"/> }
+                          {experienceItem.education ? (
+                            <SchoolIcon color="primary" />
+                          ) : (
+                            <BusinessCenterIcon color="primary" />
+                          )}
                         </TimelineDot>
                         <TimelineConnector />
                       </TimelineSeparator>
                       <TimelineContent sx={{ py: "12px", px: 2 }}>
-                        <Typography variant="h5" component="span" color="text.terciary">
+                        <Typography
+                          variant="h5"
+                          component="span"
+                          color="text.terciary"
+                        >
                           {experienceItem.entity}
                         </Typography>
-                        <Typography variant="h6" color="text.secondary">{experienceItem.title}</Typography>
+                        <Typography variant="h6" color="text.secondary">
+                          {experienceItem.title}
+                        </Typography>
                       </TimelineContent>
                     </TimelineItem>
                   ))
