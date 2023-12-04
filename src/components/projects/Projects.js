@@ -24,9 +24,10 @@ const Projects = () => {
         padding: { xs: "24px", md: "48px" }
       }}
     >
-      <Grid container spacing={4} style={{ maxWidth: "1200px" }}>
+      <Grid container spacing={4} style={{ maxWidth: "1200px"}}>
         <Grid item xs={12}>
           <Typography variant="h3" component="div">
+            Proyectos
           </Typography>
         </Grid>
         <Grid item xs={12} md={6} style={{ display: "flex" }}>

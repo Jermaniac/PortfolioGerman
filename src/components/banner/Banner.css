@@ -9,6 +9,7 @@
   padding: 6px;
   max-width: 1200px;
   text-align: center;
+  margin: 60px auto 180px auto;
 }
 
 @media (min-width: 813px) {
@@ -88,7 +89,6 @@
 }
 
 .banner_role_dynamic_text li {
-  color: #1565c0;
   list-style: none;
   font-size: x-large;
   position: relative;

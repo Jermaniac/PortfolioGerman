@@ -63,6 +63,9 @@ export const appTheme = createTheme({
     border: {
       default: grey[200],
     },
+    body: {
+      main: grey[100],
+    },
     primary: {
       main: blue[900],
     },

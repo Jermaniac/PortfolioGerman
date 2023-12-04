@@ -44,10 +44,13 @@ const Progression = () => {
         bgcolor: "background.darker",
       }}
     >
-      <Grid container style={{ maxWidth: "1200px" }}>
+      <Grid
+        container
+        style={{ maxWidth: "1200px", margin: " 60px auto 120px auto" }}
+      >
         <Grid item xs={12}>
           <Typography variant="h3" component="div">
-            Trayectoria
+            Experiencia
           </Typography>
         </Grid>
         <Grid

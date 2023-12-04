@@ -11,7 +11,7 @@ const About = () => {
       className="about_container"
       sx={{
         textAlign: "center",
-        margin: "60px auto 260px auto",
+        margin: "60px auto 120px auto",
         display: "flex",
         justifyContent: "center",
         padding: { xs: "24px", md: "48px" },
