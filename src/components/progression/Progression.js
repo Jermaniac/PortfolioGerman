@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Timeline from "@mui/lab/Timeline";
 import TimelineItem from "@mui/lab/TimelineItem";
 import TimelineSeparator from "@mui/lab/TimelineSeparator";
@@ -16,15 +16,32 @@ import Grid from "@mui/material/Grid";
 
 //TODO: animation collapse
 const Progression = () => {
+  const [experienceItems, setExperienceItems] = useState();
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await fetch("/data/experience.json");
+        if (!response.ok) {
+          throw new Error("Error obtaining experience data");
+        }
+        const data = await response.json();
+        setExperienceItems(data.experience);
+      } catch (error) {
+        console.error(error.message);
+      }
+    };
+    fetchData();
+  }, []);
+
   return (
     <Box
       className="progression_container"
-      style={{
+      sx={{
         textAlign: "center",
-        width: "100%",
-        margin: "96px auto",
         display: "flex",
         justifyContent: "center",
+        bgcolor: "background.darker",
       }}
     >
       <Grid container style={{ maxWidth: "1200px" }}>
@@ -33,165 +50,36 @@ const Progression = () => {
             Trayectoria
           </Typography>
         </Grid>
-        <Grid item xs={12}>
+        <Grid item xs={12} style={{ display: "flex", justifyContent:"center"}}>
           <Collapse in={true} orientation="vertical">
-            <Timeline position="alternate">
-            <TimelineItem>
-                <TimelineOppositeContent
-                  sx={{ m: "auto 0" }}
-                  align="right"
-                  variant="body2"
-                  color="text.secondary"
-                >
-                  MARZO 2023 - ACTUALIDAD
-                </TimelineOppositeContent>
-                <TimelineSeparator>
-                  <TimelineConnector />
-                  <TimelineDot color="primary" variant="outlined">
-                    <BusinessCenterIcon />
-                  </TimelineDot>
-                  <TimelineConnector />
-                </TimelineSeparator>
-                <TimelineContent sx={{ py: "12px", px: 2 }}>
-                  <Typography variant="h6" component="span">
-                    Santander Consumer Global Services
-                  </Typography>
-                  <Typography>Full-Stack Developer</Typography>
-                </TimelineContent>
-              </TimelineItem>
-              <TimelineItem>
-                <TimelineOppositeContent
-                  sx={{ m: "auto 0" }}
-                  align="right"
-                  variant="body2"
-                  color="text.secondary"
-                >
-                  MAYO 2022 - MARZO 2023
-                </TimelineOppositeContent>
-                <TimelineSeparator>
-                  <TimelineConnector />
-                  <TimelineDot color="primary" variant="outlined">
-                    <BusinessCenterIcon />
-                  </TimelineDot>
-                  <TimelineConnector />
-                </TimelineSeparator>
-                <TimelineContent sx={{ py: "12px", px: 2 }}>
-                  <Typography variant="h6" component="span">
-                    Scalian
-                  </Typography>
-                  <Typography>Big Data Developer</Typography>
-                </TimelineContent>
-              </TimelineItem>
-              <TimelineItem>
-                <TimelineOppositeContent
-                  sx={{ m: "auto 0" }}
-                  variant="body2"
-                  color="text.secondary"
-                >
-                  ENERO 2022 - MAYO 2022
-                </TimelineOppositeContent>
-                <TimelineSeparator>
-                  <TimelineConnector />
-                  <TimelineDot color="primary">
-                    <BusinessCenterIcon />
-                  </TimelineDot>
-                  <TimelineConnector />
-                </TimelineSeparator>
-                <TimelineContent sx={{ py: "12px", px: 2 }}>
-                  <Typography variant="h6" component="span">
-                    Indra
-                  </Typography>
-                  <Typography>Backend Developer</Typography>
-                </TimelineContent>
-              </TimelineItem>
-              <TimelineItem>
-                <TimelineOppositeContent
-                  sx={{ m: "auto 0" }}
-                  variant="body2"
-                  color="text.secondary"
-                >
-                  FEBRERO 2021 - DICIEMBRE 2021
-                </TimelineOppositeContent>
-                <TimelineSeparator>
-                  <TimelineConnector />
-                  <TimelineDot color="primary" variant="outlined">
-                    <BusinessCenterIcon />
-                  </TimelineDot>
-                  <TimelineConnector sx={{ bgcolor: "primary" }} />
-                </TimelineSeparator>
-                <TimelineContent sx={{ py: "12px", px: 2 }}>
-                  <Typography variant="h6" component="span">
-                    Capgemini
-                  </Typography>
-                  <Typography>Frontend Developer</Typography>
-                </TimelineContent>
-              </TimelineItem>
-              <TimelineItem>
-                <TimelineOppositeContent
-                  sx={{ m: "auto 0" }}
-                  variant="body2"
-                  color="text.secondary"
-                >
-                  OCTUBRE 2020 - FEBRERO 2021
-                </TimelineOppositeContent>
-                <TimelineSeparator>
-                  <TimelineConnector sx={{ bgcolor: "primary" }} />
-                  <TimelineDot color="primary">
-                    <BusinessCenterIcon />
-                  </TimelineDot>
-                  <TimelineConnector />
-                </TimelineSeparator>
-                <TimelineContent sx={{ py: "12px", px: 2 }}>
-                  <Typography variant="h6" component="span">
-                    Sermicro
-                  </Typography>
-                  <Typography>Técnico de sistemas</Typography>
-                </TimelineContent>
-              </TimelineItem>
-              <TimelineItem>
-                <TimelineOppositeContent
-                  sx={{ m: "auto 0" }}
-                  variant="body2"
-                  color="text.secondary"
-                >
-                  DICIEMBRE 2019 - MARZO 2020
-                </TimelineOppositeContent>
-                <TimelineSeparator>
-                  <TimelineConnector sx={{ bgcolor: "primary" }} />
-                  <TimelineDot color="primary" variant="outlined">
-                    <BusinessCenterIcon />
-                  </TimelineDot>
-                  <TimelineConnector />
-                </TimelineSeparator>
-                <TimelineContent sx={{ py: "12px", px: 2 }}>
-                  <Typography variant="h6" component="span">
-                    Babel
-                  </Typography>
-                  <Typography>Backend Developer / Intern</Typography>
-                </TimelineContent>
-              </TimelineItem>
-              <TimelineItem>
-                <TimelineOppositeContent
-                  sx={{ m: "auto 0" }}
-                  variant="body2"
-                  color="text.secondary"
-                >
-                  SEPTIEMBRE 2016 - JULIO 2020
-                </TimelineOppositeContent>
-                <TimelineSeparator>
-                  <TimelineConnector sx={{ bgcolor: "primary" }} />
-                  <TimelineDot color="primary">
-                    <SchoolIcon />
-                  </TimelineDot>
-                  <TimelineConnector />
-                </TimelineSeparator>
-                <TimelineContent sx={{ py: "12px", px: 2 }}>
-                  <Typography variant="h6" component="span">
-                    Universidad Politécnica de Madrid
-                  </Typography>
-                  <Typography>Estudiante</Typography>
-                </TimelineContent>
-              </TimelineItem>
+            <Timeline>
+              {experienceItems
+                ? experienceItems.map((experienceItem) => (
+                    <TimelineItem key={experienceItem.id}>
+                      <TimelineOppositeContent
+                        sx={{ m: "auto 0" }}
+                        align="right"
+                        variant="subtitle1"
+                        color="text.secondary"
+                      >
+                        {experienceItem.period}
+                      </TimelineOppositeContent>
+                      <TimelineSeparator>
+                        <TimelineConnector />
+                        <TimelineDot color="primary" variant="outlined">
+                          { experienceItem.education ? <SchoolIcon color="primary"/> : <BusinessCenterIcon color="primary"/> }
+                        </TimelineDot>
+                        <TimelineConnector />
+                      </TimelineSeparator>
+                      <TimelineContent sx={{ py: "12px", px: 2 }}>
+                        <Typography variant="h5" component="span" color="text.terciary">
+                          {experienceItem.entity}
+                        </Typography>
+                        <Typography variant="h6" color="text.secondary">{experienceItem.title}</Typography>
+                      </TimelineContent>
+                    </TimelineItem>
+                  ))
+                : null}
             </Timeline>
           </Collapse>
         </Grid>

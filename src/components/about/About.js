@@ -9,13 +9,18 @@ const About = () => {
   return (
     <Box
       className="about_container"
-      style={{
+      sx={{
         textAlign: "center",
-        margin: "96px auto",
+        margin: "60px auto 260px auto",
         display: "flex",
         justifyContent: "center",
+/*         maxWidth: "1200px",
+        border: "2px solid",
+        borderRadius: "10px",
+        bgcolor: "background.lighter",
+        borderColor: "border.default", */
+        padding: { xs: "24px", md: "48px" },
       }}
-      sx={{ padding: { xs: "24px", md: "48px" } }}
     >
       <Grid container style={{ maxWidth: "1200px" }}>
         <Grid item xs={12} lg={6}>
@@ -32,11 +37,11 @@ const About = () => {
           />
         </Grid>
         <Grid item xs={12} lg={6} sx={{ paddingRight: { lg: "56px" } }}>
-          <Typography variant="h3" component="div">
+          <Typography variant="h3" component="div" color="text.primary">
             ¿Quién soy?
           </Typography>
           <br />
-          <Typography variant="body1" component="div">
+          <Typography variant="body1" component="div" color="text.terciary">
             Graduado en Ingeniería del Software por la Universidad Politécnica
             de Madrid. Aunque he trabajado en proyectos Big Data con tecnologías
             como Spark y Scala. Actualmente me dedico al desarrollo web con
@@ -44,7 +49,7 @@ const About = () => {
             parte backend (NodeJS).
           </Typography>
           <br />
-          <Typography variant="h6" component="div">
+          <Typography variant="h6" component="div" color="text.terciary">
             ¡Siempre dispuesto a aceptar nuevos retos y absorber todo el
             conocimiento que pueda!
           </Typography>

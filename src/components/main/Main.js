@@ -8,13 +8,13 @@ import Progression from "../progression/Progression";
 
 const Main = () => {
   return (
-    <>
+    <React.Fragment>
       <Banner></Banner>
       <Progression></Progression>
       <About></About>
       <Projects></Projects>
       <Contact></Contact>
-    </>
+    </React.Fragment>
   );
 };
 

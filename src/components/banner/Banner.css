@@ -8,9 +8,11 @@
     "cv";
     gap: 24px;
     padding: 24px;
+    max-width: 1200px;
+    text-align: center;
 }
 
-@media (min-width:640px) {
+@media (min-width:813px) {
     .banner_container {
         grid-template-areas:
         "name pic"
@@ -31,7 +33,13 @@
     max-height: 500px;
 }
 
-@media (max-width:640px) {
+@media (max-width:813px) {
+    .banner_img {
+        max-width: 350px;
+    }
+}
+
+@media (max-width:600px) {
     .banner_img {
         max-width: 250px;
     }
@@ -65,6 +73,8 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
+    font-size: x-large;
+    font-weight: 400;
 }
 
 .banner_cv {
@@ -74,16 +84,9 @@
     align-self: center;
 }
 
-
-
-.banner_role_wrapper {
-    font-size: x-large;
-    font-weight: 400;
-}
-
 .banner_role_wrapper .banner_role_dynamic_text {
     margin-left: 7px;
-    height: 34px;
+    height: 43px;
     line-height: 34px;
     overflow: hidden;
 }
@@ -97,7 +100,6 @@
     color: #1565c0;
     list-style: none;
     font-size: x-large;
-    font-weight: 400;
     position: relative;
     top: 0;
     animation: slide 3s steps(3) infinite;
@@ -106,12 +108,8 @@
 @keyframes slide
 {
     100%{
-        top:-100px;
+        top:-128px;
     }
-}
-
-.banner_role_dynamic_text li span{
-    position: relative;
 }
 
 .banner_role_dynamic_text li span::after{
@@ -119,11 +117,12 @@
     position: absolute;
     height: 100%;
     width: 100%;
-    border-left: 2px solid black;
-    background: #212121;
+    border-left: 3px solid black;
+    background: #fafafa;
     left:0;
     animation: typing 1s steps(10) infinite;
 }
+
 @keyframes typing
 {
     40%,60%{

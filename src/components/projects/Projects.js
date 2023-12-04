@@ -16,13 +16,13 @@ const Projects = () => {
   return (
     <Box
       className="projects_container"
-      style={{
+      sx={{
         textAlign: "center",
         display: "flex",
-        margin: "96px auto",
         justifyContent: "center",
+        bgcolor: 'background.lighter',
+        padding: { xs: "24px", md: "48px" }
       }}
-      sx={{ padding: { xs: "24px", md: "48px" } }}
     >
       <Grid container spacing={4} style={{ maxWidth: "1200px" }}>
         <Grid item xs={12}>

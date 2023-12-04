@@ -5,13 +5,23 @@ import { createTheme } from "@mui/material/styles";
 export const appTheme = createTheme({
   typography: {
     fontFamily: ["'Poppins'", "sans-serif"].join(","),
+    h3: { fontWeight: 500 },
+    h4: { fontWeight: 500 },
+    h5: { fontWeight: 500 },
+    h6: { fontWeight: 500 },
+    subtitle1: { fontWeight: 500 },
+    body1: { fontWeight: 500 }
   },
   palette: {
     background: {
-      default: grey[900],
+      lighter: grey[50],
+      darker: grey[200],
+    },
+    border: {
+      default: grey[200],
     },
     primary: {
-      main: blue[800],
+      main: blue[900],
     },
     secondary: {
       main: blue[500],
@@ -20,9 +30,9 @@ export const appTheme = createTheme({
       main: blue[50],
     },
     text: {
-      primary: blue[50],
-      secondary: blue[500],
-      terciary: grey[900]
+      primary: blue[800],
+      secondary: blue[700],
+      terciary: grey[900],
     },
   },
 });
