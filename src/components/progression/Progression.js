@@ -1,10 +1,9 @@
 import React, { useEffect, useState } from "react";
 import Timeline from "@mui/lab/Timeline";
-import TimelineItem from "@mui/lab/TimelineItem";
+import TimelineItem, { timelineItemClasses } from "@mui/lab/TimelineItem";
 import TimelineSeparator from "@mui/lab/TimelineSeparator";
 import TimelineConnector from "@mui/lab/TimelineConnector";
 import TimelineContent from "@mui/lab/TimelineContent";
-import TimelineOppositeContent from "@mui/lab/TimelineOppositeContent";
 import TimelineDot from "@mui/lab/TimelineDot";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
@@ -59,20 +58,16 @@ const Progression = () => {
           style={{ display: "flex", justifyContent: "center" }}
         >
           <Collapse in={true} orientation="vertical">
-            <Timeline>
+            <Timeline
+            sx={{
+              [`& .${timelineItemClasses.root}:before`]: {
+                flex: 0,
+                padding: 0,
+              },
+            }}>
               {experienceItems
                 ? experienceItems.map((experienceItem) => (
                     <TimelineItem key={experienceItem.id}>
-                      <TimelineOppositeContent
-                        sx={{ m: "auto 0", textAlign: "right" }}
-                        variant="subtitle1"
-                        color="text.secondary"
-                      >
-                        {experienceItem.periodTo}
-                        <Typography variant="subtitle1" color="text.secondary">
-                        {experienceItem.periodFrom}
-                        </Typography>
-                      </TimelineOppositeContent>
                       <TimelineSeparator>
                         <TimelineDot color="primary" variant="outlined">
                           {experienceItem.education ? (
@@ -93,6 +88,13 @@ const Progression = () => {
                         </Typography>
                         <Typography variant="h6" color="text.secondary">
                           {experienceItem.title}
+                        </Typography>
+                        <Typography
+                          variant="subtitle1"
+                          component="span"
+                          color="text.terciary"
+                        >
+                          {experienceItem.periodFrom} - {experienceItem.periodTo} 
                         </Typography>
                       </TimelineContent>
                     </TimelineItem>
