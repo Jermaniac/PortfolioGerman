@@ -4,42 +4,48 @@
       "id": 0,
       "entity": "Santander Consumer Global Services",
       "title": "Full-Stack Developer",
-      "period": "MAR 2023 - ACTUALIDAD",
+      "periodFrom": "MAR 2023",
+      "periodTo": "Actualidad",
       "education": false
     },
     {
       "id": 1,
       "entity": "Scalian",
       "title": "Big Data Developer",
-      "period": "MAY 2022 - MAR 2023",
+      "periodFrom": "MAY 2022",
+      "periodTo": "MAR 2023",
       "education": false
     },
     {
       "id": 2,
       "entity": "Capgemini",
       "title": "Frontend Developer",
-      "period": "FEB 2021 - DIC 2021",
+      "periodFrom": "FEB 2021",
+      "periodTo": "DIC 2021",
       "education": false
     },
     {
       "id": 3,
       "entity": "Sermicro",
       "title": "Tecnico de sistemas",
-      "period": "OCT 2020 - FEB 2021",
+      "periodFrom": "OCT 2020",
+      "periodTo": "FEB 2021",
       "education": false
     },
     {
       "id": 4,
       "entity": "Babel",
       "title": "Becario desarrollo software",
-      "period": "DIC 2019 - MAR 2020",
+      "periodFrom": "DIC 2019",
+      "periodTo": "MAR 2020",
       "education": false
     },
     {
       "id": 5,
       "entity": "Universidad Politécnica de Madrid",
       "title": "Estudiante",
-      "period": "SEP 2016 - JUL 2020",
+      "periodFrom": "SEP 2016",
+      "periodTo": "JUL 2020",
       "education": true
     }
   ]

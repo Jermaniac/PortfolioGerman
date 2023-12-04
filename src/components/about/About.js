@@ -39,7 +39,7 @@ const About = () => {
           <Typography variant="body1" component="div" color="text.terciary">
             Graduado en Ingeniería del Software por la Universidad Politécnica
             de Madrid. Aunque he trabajado en proyectos Big Data con tecnologías
-            como Spark y Scala. Actualmente me dedico al desarrollo web con
+            como Spark y Scala, actualmente me dedico al desarrollo web con
             JavaScript tanto en la parte frontend (React/Angular) como en la
             parte backend (NodeJS).
           </Typography>

@@ -68,7 +68,10 @@ const Progression = () => {
                         variant="subtitle1"
                         color="text.secondary"
                       >
-                        {experienceItem.period}
+                        {experienceItem.periodTo}
+                        <Typography variant="subtitle1" color="text.secondary">
+                        {experienceItem.periodFrom}
+                        </Typography>
                       </TimelineOppositeContent>
                       <TimelineSeparator>
                         <TimelineDot color="primary" variant="outlined">
