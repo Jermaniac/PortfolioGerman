@@ -1,5 +1,4 @@
-{
-  "experience": [
+[
     {
       "id": 0,
       "entity": "Santander Consumer Global Services",
@@ -48,5 +47,4 @@
       "periodTo": "JUL 2020",
       "education": true
     }
-  ]
-}
+]

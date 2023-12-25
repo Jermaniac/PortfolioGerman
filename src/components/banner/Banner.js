@@ -1,6 +1,6 @@
 import React from "react";
-import germanSelfiePng from "../../assets/images/german-selfie-png.png";
-import pdfGerman from "../../assets/documents/CVGERMAN2022.pdf";
+import germanSelfiePng from "assets/images/german-selfie-png.png";
+import pdfGerman from "assets/documents/CVGERMAN2022.pdf";
 import "./Banner.css";
 import Button from "@mui/material/Button";
 import Box from "@mui/material/Box";
@@ -11,7 +11,6 @@ const Banner = () => {
     <React.Fragment>
       <Box
         sx={{
-          bgcolor: "background.lighter",
           display: "flex",
           justifyContent: "center",
         }}
@@ -28,10 +27,10 @@ const Banner = () => {
             <Typography variant="h3" color="text.primary">
               ¡Hola!
             </Typography>
-            <Typography variant="h3" color="text.secondary">
+            <Typography variant="h3" color="text.primary">
               Mi nombre es
             </Typography>
-            <Typography variant="h3" color="text.secondary">
+            <Typography variant="h3" color="text.primary">
               Germán González
             </Typography>
           </div>

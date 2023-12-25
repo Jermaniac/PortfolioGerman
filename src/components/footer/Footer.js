@@ -1,4 +1,3 @@
-import React from "react";
 import Box from "@mui/material/Box";
 import AppBar from "@mui/material/AppBar";
 
@@ -11,7 +10,7 @@ const Footer = () => {
       }}
     >
       <AppBar position="relative" color="primary" style={{ height: "24px" }}>
-        Designed using Material UI
+        Jermaniac
       </AppBar>
     </Box>
   );

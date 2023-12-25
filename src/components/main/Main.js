@@ -1,20 +1,18 @@
-import React from "react";
-
-import Banner from "../banner/Banner";
-import Projects from "../projects/Projects";
-import About from "../about/About";
-import Contact from "../contact/Contact";
-import Progression from "../progression/Progression";
+import Banner from "components/banner/Banner";
+import Projects from "components/projects/Projects";
+import About from "components/about/About";
+import Contact from "components/contact/Contact";
+import Progression from "components/progression/Progression";
 
 const Main = () => {
   return (
-    <React.Fragment>
+    <>
       <Banner></Banner>
       <Progression></Progression>
       <About></About>
       <Projects></Projects>
       <Contact></Contact>
-    </React.Fragment>
+    </>
   );
 };
 

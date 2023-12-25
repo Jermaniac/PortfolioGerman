@@ -1,8 +1,7 @@
-import React from "react";
 import Typography from "@mui/material/Typography";
 import Grid from "@mui/material/Grid";
 import Box from "@mui/material/Box";
-import laptopWithBackground from "../../assets/images/laptop_with_background.jpg";
+import laptopWithBackground from "assets/images/laptop_with_background.jpg";
 
 //TODO: fix background
 const About = () => {

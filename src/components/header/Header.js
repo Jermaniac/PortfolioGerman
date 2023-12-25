@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useContext, useState } from "react";
 
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
@@ -7,17 +7,30 @@ import IconButton from "@mui/material/IconButton";
 import Typography from "@mui/material/Typography";
 import MenuItem from "@mui/material/MenuItem";
 import Menu from "@mui/material/Menu";
+import Switch from "@mui/material/Switch";
+
 import MailIcon from "@mui/icons-material/Mail";
 import MoreIcon from "@mui/icons-material/MoreVert";
-
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
+import DarkModeIcon from "@mui/icons-material/DarkMode";
+import LightModeIcon from "@mui/icons-material/LightMode";
+
+import { ThemeContext } from "contexts/ThemeContext";
+
+const hoverButtonStyles = {
+  "&:hover": {
+    backgroundColor: "rgba(0, 0, 0, 0.2)",
+  },
+};
+
+const CONTACT_MAIL = "german.gonzalezggarzon@gmail.com";
 
 const Header = () => {
   const [mobileMoreAnchorEl, setMobileMoreAnchorEl] = useState(null);
+  const colorMode = useContext(ThemeContext);
 
   const isMobileMenuOpen = Boolean(mobileMoreAnchorEl);
-
   const handleMobileMenuClose = () => {
     setMobileMoreAnchorEl(null);
   };
@@ -27,24 +40,46 @@ const Header = () => {
   };
 
   const mailIconButton = (
-    <IconButton color="inherit" href="mailto:germansk98@gmail.com">
+    <IconButton
+      sx={hoverButtonStyles}
+      color="inherit"
+      href={`mailto:${CONTACT_MAIL}`}
+    >
       <MailIcon />
     </IconButton>
   );
 
   const linkedinIconButton = (
     <IconButton
+      sx={hoverButtonStyles}
       color="inherit"
       href="https://www.linkedin.com/in/germ%C3%A1n-gonz%C3%A1lez-garz%C3%B3n-8807a2162/"
+      target="_blank"
     >
       <LinkedInIcon />
     </IconButton>
   );
 
   const githubIconButton = (
-    <IconButton color="inherit" href="https://github.com/Jermaniac">
+    <IconButton
+      sx={hoverButtonStyles}
+      color="inherit"
+      href="https://github.com/Jermaniac"
+      target="_blank"
+    >
       <GitHubIcon />
     </IconButton>
+  );
+
+  const switcherThemeButton = (
+    <Switch
+      sx={hoverButtonStyles}
+      onClick={() => {
+        colorMode.toggleColorMode();
+      }}
+      icon={<DarkModeIcon />}
+      checkedIcon={<LightModeIcon />}
+    />
   );
 
   const mobileMenuId = "primary-search-account-menu-mobile";
@@ -86,6 +121,7 @@ const Header = () => {
             {linkedinIconButton}
             {githubIconButton}
           </Box>
+          <Box sx={{ display: { xs: "flex" } }}>{switcherThemeButton}</Box>
           <Box sx={{ display: { xs: "flex", md: "none" } }}>
             <IconButton
               size="large"

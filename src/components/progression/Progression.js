@@ -1,38 +1,22 @@
-import React, { useEffect, useState } from "react";
 import Timeline from "@mui/lab/Timeline";
 import TimelineItem, { timelineItemClasses } from "@mui/lab/TimelineItem";
 import TimelineSeparator from "@mui/lab/TimelineSeparator";
 import TimelineConnector from "@mui/lab/TimelineConnector";
 import TimelineContent from "@mui/lab/TimelineContent";
 import TimelineDot from "@mui/lab/TimelineDot";
+
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
 import Collapse from "@mui/material/Collapse";
+import Grid from "@mui/material/Grid";
+
 import BusinessCenterIcon from "@mui/icons-material/BusinessCenter";
 import SchoolIcon from "@mui/icons-material/School";
 
-import Grid from "@mui/material/Grid";
+import dataExperience from "data/experience.json";
 
 //TODO: animation collapse
 const Progression = () => {
-  const [experienceItems, setExperienceItems] = useState();
-
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const response = await fetch("/data/experience.json");
-        if (!response.ok) {
-          throw new Error("Error obtaining experience data");
-        }
-        const data = await response.json();
-        setExperienceItems(data.experience);
-      } catch (error) {
-        console.error(error.message);
-      }
-    };
-    fetchData();
-  }, []);
-
   return (
     <Box
       className="progression_container"
@@ -40,7 +24,6 @@ const Progression = () => {
         textAlign: "center",
         display: "flex",
         justifyContent: "center",
-        bgcolor: "background.darker",
       }}
     >
       <Grid
@@ -59,14 +42,15 @@ const Progression = () => {
         >
           <Collapse in={true} orientation="vertical">
             <Timeline
-            sx={{
-              [`& .${timelineItemClasses.root}:before`]: {
-                flex: 0,
-                padding: 0,
-              },
-            }}>
-              {experienceItems
-                ? experienceItems.map((experienceItem) => (
+              sx={{
+                [`& .${timelineItemClasses.root}:before`]: {
+                  flex: 0,
+                  padding: 0,
+                },
+              }}
+            >
+              {dataExperience
+                ? dataExperience.map((experienceItem) => (
                     <TimelineItem key={experienceItem.id}>
                       <TimelineSeparator>
                         <TimelineDot color="primary" variant="outlined">
@@ -94,7 +78,8 @@ const Progression = () => {
                           component="span"
                           color="text.terciary"
                         >
-                          {experienceItem.periodFrom} - {experienceItem.periodTo} 
+                          {experienceItem.periodFrom} -{" "}
+                          {experienceItem.periodTo}
                         </Typography>
                       </TimelineContent>
                     </TimelineItem>

@@ -1,16 +1,16 @@
-import React from "react";
-
 import Typography from "@mui/material/Typography";
 import Grid from "@mui/material/Grid";
-import moodWebAppGif from "../../assets/gifs/moodWebApp.gif";
-import moodMobileAppGif from "../../assets/gifs/moodMobileApp.gif";
-import pricingCryptoAppGif from "../../assets/gifs/pricingCryptoApp.gif";
+
 import Card from "@mui/material/Card";
 import CardActions from "@mui/material/CardActions";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Button from "@mui/material/Button";
 import Box from "@mui/material/Box";
+
+import moodWebAppGif from "assets/gifs/moodWebApp.gif";
+import moodMobileAppGif from "assets/gifs/moodMobileApp.gif";
+import pricingCryptoAppGif from "assets/gifs/pricingCryptoApp.gif";
 
 const Projects = () => {
   return (
@@ -20,11 +20,10 @@ const Projects = () => {
         textAlign: "center",
         display: "flex",
         justifyContent: "center",
-        bgcolor: 'background.lighter',
-        padding: { xs: "24px", md: "48px" }
+        padding: { xs: "24px", md: "48px" },
       }}
     >
-      <Grid container spacing={4} style={{ maxWidth: "1200px"}}>
+      <Grid container spacing={4} style={{ maxWidth: "1200px" }}>
         <Grid item xs={12}>
           <Typography variant="h3" component="div">
             Proyectos
@@ -39,10 +38,15 @@ const Projects = () => {
               sx={{ maxHeight: { md: "286px" } }}
             />
             <CardContent>
-              <Typography gutterBottom variant="h6" component="div" color="text.terciary">
+              <Typography
+                gutterBottom
+                variant="h6"
+                component="div"
+                color="text.terciary"
+              >
                 Reconocimiento de expresiones faciales en web
               </Typography>
-              <Typography variant="body1" color="text.terciary" >
+              <Typography variant="body1" color="text.terciary">
                 Se trata de una web que reconoce siete expresiones faciales
                 (enfadado, disgustado, asustado, feliz, triste, sorprendido,
                 neutral) a partir de la fotografía de un rostro utilizando una
@@ -70,7 +74,12 @@ const Projects = () => {
               sx={{ maxHeight: { md: "286px" } }}
             />
             <CardContent>
-              <Typography gutterBottom variant="h6" component="div" color="text.terciary">
+              <Typography
+                gutterBottom
+                variant="h6"
+                component="div"
+                color="text.terciary"
+              >
                 Mood App
               </Typography>
               <Typography variant="body1" color="text.terciary">
@@ -103,7 +112,12 @@ const Projects = () => {
               sx={{ maxHeight: { md: "286px" } }}
             />
             <CardContent>
-              <Typography gutterBottom variant="h6" component="div" color="text.terciary">
+              <Typography
+                gutterBottom
+                variant="h6"
+                component="div"
+                color="text.terciary"
+              >
                 Crypto Pricing App
               </Typography>
               <Typography variant="body1" color="text.terciary">
