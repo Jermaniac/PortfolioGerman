@@ -115,8 +115,8 @@
   position: absolute;
   height: 100%;
   width: 100%;
-  border-left: 3px solid black;
-  background: #fafafa;
+  border-left: 3px solid var(--borderColor);
+  background: var(--bgColor);
   left: 0;
   animation: typing 1s steps(10) infinite;
 }

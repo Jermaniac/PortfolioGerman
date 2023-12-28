@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import germanSelfiePng from "assets/images/german-selfie-png.png";
 import pdfGerman from "assets/documents/CVGERMAN2022.pdf";
 import "./Banner.css";
@@ -6,7 +6,17 @@ import Button from "@mui/material/Button";
 import Box from "@mui/material/Box";
 import { Typography } from "@mui/material";
 
+import { ThemeContext } from "contexts/ThemeContext";
+
+const hexaDarkModeBgColor = "#121212";
+const hexaLightModeBgColor = "#fff";
+
 const Banner = () => {
+  const { mode } = useContext(ThemeContext);
+  const colorStyleBannerTheme =
+    mode === "light" ? hexaLightModeBgColor : hexaDarkModeBgColor;
+  const colorStyleBorderTheme =
+    mode === "light" ? hexaDarkModeBgColor : hexaLightModeBgColor;
   return (
     <React.Fragment>
       <Box
@@ -35,7 +45,13 @@ const Banner = () => {
             </Typography>
           </div>
           <div className="banner_role_wrapper">
-            <ul className="banner_role_dynamic_text">
+            <ul
+              className="banner_role_dynamic_text"
+              style={{
+                "--bgColor": colorStyleBannerTheme,
+                "--borderColor": colorStyleBorderTheme,
+              }}
+            >
               <li>
                 <Typography variant="h4" component="span" color="text.terciary">
                   Software Engineer

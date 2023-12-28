@@ -24,7 +24,7 @@ const ThemeContextProvider = ({ children }) => {
   const themeSelected = useMemo(() => createTheme(appTheme(mode)), [mode]);
 
   return (
-    <ThemeContext.Provider value={colorMode}>
+    <ThemeContext.Provider value={{ mode, colorMode }}>
       <ThemeProvider theme={themeSelected}>
         <CssBaseline></CssBaseline>
         {children}
