@@ -28,7 +28,7 @@ const CONTACT_MAIL = "german.gonzalezggarzon@gmail.com";
 
 const Header = () => {
   const [mobileMoreAnchorEl, setMobileMoreAnchorEl] = useState(null);
-  const themeContext = useContext(ThemeContext);
+  const { colorMode } = useContext(ThemeContext);
 
   const isMobileMenuOpen = Boolean(mobileMoreAnchorEl);
   const handleMobileMenuClose = () => {
@@ -75,7 +75,7 @@ const Header = () => {
     <Switch
       sx={hoverButtonStyles}
       onClick={() => {
-        themeContext.colorMode.toggleColorMode();
+        colorMode.toggleColorMode();
       }}
       icon={<DarkModeIcon />}
       checkedIcon={<LightModeIcon />}

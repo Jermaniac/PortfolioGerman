@@ -11,14 +11,19 @@ import { ThemeContext } from "contexts/ThemeContext";
 const hexaDarkModeBgColor = "#121212";
 const hexaLightModeBgColor = "#fff";
 
+const getColorValues = (mode) => ({
+  bgColorStyleBanner:
+    mode === "light" ? hexaLightModeBgColor : hexaDarkModeBgColor,
+  borderColorStyleBanner:
+    mode === "light" ? hexaDarkModeBgColor : hexaLightModeBgColor,
+});
+
 const Banner = () => {
   const { mode } = useContext(ThemeContext);
-  const colorStyleBannerTheme =
-    mode === "light" ? hexaLightModeBgColor : hexaDarkModeBgColor;
-  const colorStyleBorderTheme =
-    mode === "light" ? hexaDarkModeBgColor : hexaLightModeBgColor;
+  const { bgColorStyleBanner, borderColorStyleBanner } = getColorValues(mode);
+
   return (
-    <React.Fragment>
+    <>
       <Box
         sx={{
           display: "flex",
@@ -48,8 +53,8 @@ const Banner = () => {
             <ul
               className="banner_role_dynamic_text"
               style={{
-                "--bgColor": colorStyleBannerTheme,
-                "--borderColor": colorStyleBorderTheme,
+                "--bgColor": bgColorStyleBanner,
+                "--borderColor": borderColorStyleBanner,
               }}
             >
               <li>
@@ -80,7 +85,7 @@ const Banner = () => {
           </Button>
         </Box>
       </Box>
-    </React.Fragment>
+    </>
   );
 };
 
