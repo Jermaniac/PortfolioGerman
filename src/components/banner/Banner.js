@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import { useContext } from "react";
 import germanSelfiePng from "assets/images/german-selfie-png.png";
 import pdfGerman from "assets/documents/CVGERMAN2022.pdf";
 import "./Banner.css";
@@ -30,15 +30,15 @@ const Banner = () => {
           justifyContent: "center",
         }}
       >
-        <Box className="banner_container">
-          <picture className="banner_picture">
+        <Box className="banner">
+          <picture className="banner__picture">
             <img
-              className="banner_img"
+              className="banner__picture banner__picture-img"
               src={germanSelfiePng}
               alt="german-selfie"
             />
           </picture>
-          <div className="banner_name_wrapper">
+          <div className="banner__name">
             <Typography variant="h3" color="text.primary">
               ¡Hola!
             </Typography>
@@ -49,25 +49,25 @@ const Banner = () => {
               Germán González
             </Typography>
           </div>
-          <div className="banner_role_wrapper">
+          <div className="banner__role">
             <ul
-              className="banner_role_dynamic_text"
+              className="banner__role--dynamic_text"
               style={{
                 "--bgColor": bgColorStyleBanner,
                 "--borderColor": borderColorStyleBanner,
               }}
             >
-              <li>
+              <li className="banner__role--dynamic_text--item">
                 <Typography variant="h4" component="span" color="text.terciary">
                   Software Engineer
                 </Typography>
               </li>
-              <li>
+              <li className="banner__role--dynamic_text--item">
                 <Typography variant="h4" component="span" color="text.terciary">
                   Web Developer
                 </Typography>
               </li>
-              <li>
+              <li className="banner__role--dynamic_text--item">
                 <Typography variant="h4" component="span" color="text.terciary">
                   Big Data Developer
                 </Typography>
@@ -75,7 +75,7 @@ const Banner = () => {
             </ul>
           </div>
           <Button
-            className="banner_cv"
+            className="banner__cv"
             href={pdfGerman}
             download="CV_GERMAN_GONZALEZ_GARZON"
             variant="contained"
