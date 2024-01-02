@@ -31,9 +31,7 @@ const Progression = () => {
         style={{ maxWidth: "1200px", margin: " 60px auto 120px auto" }}
       >
         <Grid item xs={12}>
-          <Typography variant="h3" component="div">
-            Experiencia
-          </Typography>
+          <h1>Experience</h1>
         </Grid>
         <Grid
           item
@@ -47,6 +45,7 @@ const Progression = () => {
                   flex: 0,
                   padding: 0,
                 },
+                px: "42px",
               }}
             >
               {dataExperience

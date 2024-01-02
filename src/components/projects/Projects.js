@@ -1,4 +1,3 @@
-import Typography from "@mui/material/Typography";
 import Grid from "@mui/material/Grid";
 
 import Card from "@mui/material/Card";
@@ -15,19 +14,17 @@ import pricingCryptoAppGif from "assets/gifs/pricingCryptoApp.gif";
 const Projects = () => {
   return (
     <Box
-      className="projects_container"
+      className="projects"
       sx={{
         textAlign: "center",
         display: "flex",
         justifyContent: "center",
-        padding: { xs: "24px", md: "48px" },
+        padding: { xs: "30px", md: "48px" },
       }}
     >
       <Grid container spacing={4} style={{ maxWidth: "1200px" }}>
         <Grid item xs={12}>
-          <Typography variant="h3" component="div">
-            Proyectos
-          </Typography>
+          <h1>Projects</h1>
         </Grid>
         <Grid item xs={12} md={6} style={{ display: "flex" }}>
           <Card style={{ display: "grid" }}>
@@ -37,21 +34,14 @@ const Projects = () => {
               alt="mood_web_app_gif"
               sx={{ maxHeight: { md: "286px" } }}
             />
-            <CardContent>
-              <Typography
-                gutterBottom
-                variant="h6"
-                component="div"
-                color="text.terciary"
-              >
-                Reconocimiento de expresiones faciales en web
-              </Typography>
-              <Typography variant="body1" color="text.terciary">
-                Se trata de una web que reconoce siete expresiones faciales
-                (enfadado, disgustado, asustado, feliz, triste, sorprendido,
-                neutral) a partir de la fotografía de un rostro utilizando una
-                red neuronal convolucional o CNN.
-              </Typography>
+            <CardContent sx={{ padding: "24px" }}>
+              <h2>Facial expression recognition web</h2>
+              <p>
+                This project is about a website that recognizes seven facial
+                expressions (angry, disgusted, scared, happy, sad, surprised,
+                neutral) from a face photograph using a convolutional neural
+                network trained by me.
+              </p>
             </CardContent>
             <CardActions style={{ justifyContent: "center" }}>
               <Button
@@ -60,7 +50,7 @@ const Projects = () => {
                 variant="contained"
                 color="primary"
               >
-                VER PROYECTO
+                CHECK PROJECT
               </Button>
             </CardActions>
           </Card>
@@ -73,23 +63,16 @@ const Projects = () => {
               alt="mood_android_app_gif"
               sx={{ maxHeight: { md: "286px" } }}
             />
-            <CardContent>
-              <Typography
-                gutterBottom
-                variant="h6"
-                component="div"
-                color="text.terciary"
-              >
-                Mood App
-              </Typography>
-              <Typography variant="body1" color="text.terciary">
-                Se trata de una aplicación móvil que reconoce siete expresiones
-                faciales (enfadado, disgustado, asustado, feliz, triste,
-                sorprendido, neutral) a partir de la fotografía de un rostro que
-                puedes escoger de la galería o bien tomarte una foto desde la
-                cámara del dispositivo utilizando una red neuronal convolucional
-                o CNN.
-              </Typography>
+            <CardContent sx={{ padding: "24px" }}>
+              <h2>Mood App</h2>
+              <p>
+                This is a mobile application that recognizes seven facial
+                expressions (angry, disgusted, scared, happy, sad, surprised,
+                neutral) from a face photograph. You can either choose an image
+                from the gallery or take a photo using the device&apos;s camera.
+                This recognition is done using a convolutional neural network
+                trained by me.
+              </p>
             </CardContent>
             <CardActions style={{ justifyContent: "center" }}>
               <Button
@@ -98,7 +81,7 @@ const Projects = () => {
                 variant="contained"
                 color="primary"
               >
-                VER PROYECTO
+                CHECK PROJECT
               </Button>
             </CardActions>
           </Card>
@@ -111,20 +94,12 @@ const Projects = () => {
               alt="crypto_pricing_app_gif"
               sx={{ maxHeight: { md: "286px" } }}
             />
-            <CardContent>
-              <Typography
-                gutterBottom
-                variant="h6"
-                component="div"
-                color="text.terciary"
-              >
-                Crypto Pricing App
-              </Typography>
-              <Typography variant="body1" color="text.terciary">
-                Se trata de una app muy simple que muestra los precios en tiempo
-                real de 10 criptomonedas. Los datos usados pertenecen a la api
-                de Messari.
-              </Typography>
+            <CardContent sx={{ padding: "24px" }}>
+              <h2>Crypto Pricing web</h2>
+              <p>
+                It&apos;s a very simple web that displays real-time prices for
+                10 cryptocurrencies. The data used belongs to the Messari API.
+              </p>
             </CardContent>
             <CardActions style={{ justifyContent: "center" }}>
               <Button
@@ -133,7 +108,7 @@ const Projects = () => {
                 variant="contained"
                 color="primary"
               >
-                VER PROYECTO
+                CHECK PROJECT
               </Button>
             </CardActions>
           </Card>

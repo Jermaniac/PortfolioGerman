@@ -4,7 +4,6 @@ import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
 import IconButton from "@mui/material/IconButton";
-import Typography from "@mui/material/Typography";
 import MenuItem from "@mui/material/MenuItem";
 import Menu from "@mui/material/Menu";
 import Switch from "@mui/material/Switch";
@@ -105,39 +104,35 @@ const Header = () => {
   );
 
   return (
-    <Box className="header_container" sx={{ flexGrow: 1 }}>
-      <AppBar position="static" color="primary">
-        <Toolbar>
-          <Typography
-            variant="h5"
-            component="div"
-            sx={{ display: { xs: "none", sm: "block" } }}
-          >
-            Germán González Garzón
-          </Typography>
-          <Box sx={{ flexGrow: 1 }} />
-          <Box sx={{ display: { xs: "none", md: "flex" } }}>
-            {mailIconButton}
-            {linkedinIconButton}
-            {githubIconButton}
-          </Box>
-          <Box sx={{ display: { xs: "flex" } }}>{switcherThemeButton}</Box>
-          <Box sx={{ display: { xs: "flex", md: "none" } }}>
-            <IconButton
-              size="large"
-              aria-label="show more"
-              aria-controls={mobileMenuId}
-              aria-haspopup="true"
-              onClick={handleMobileMenuOpen}
-              color="terciary"
-            >
-              <MoreIcon />
-            </IconButton>
-          </Box>
-        </Toolbar>
-      </AppBar>
-      {renderMobileMenu}
-    </Box>
+    <header>
+      <Box className="header_container" sx={{ flexGrow: 1 }}>
+        <AppBar position="static" color="primary">
+          <Toolbar>
+            <h5>Germán González Garzón</h5>
+            <Box sx={{ flexGrow: 1 }} />
+            <Box sx={{ display: { xs: "none", md: "flex" } }}>
+              {mailIconButton}
+              {linkedinIconButton}
+              {githubIconButton}
+            </Box>
+            <Box sx={{ display: { xs: "flex" } }}>{switcherThemeButton}</Box>
+            <Box sx={{ display: { xs: "flex", md: "none" } }}>
+              <IconButton
+                size="large"
+                aria-label="show more"
+                aria-controls={mobileMenuId}
+                aria-haspopup="true"
+                onClick={handleMobileMenuOpen}
+                color="terciary"
+              >
+                <MoreIcon />
+              </IconButton>
+            </Box>
+          </Toolbar>
+        </AppBar>
+        {renderMobileMenu}
+      </Box>
+    </header>
   );
 };
 

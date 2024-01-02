@@ -1,13 +1,12 @@
-import Typography from "@mui/material/Typography";
 import Grid from "@mui/material/Grid";
 import Box from "@mui/material/Box";
-import laptopWithBackground from "assets/images/laptop_with_background.jpg";
+import laptopWithBackground from "assets/images/laptop_with_background.webp";
 
 //TODO: fix background
 const About = () => {
   return (
     <Box
-      className="about_container"
+      className="about"
       sx={{
         textAlign: "center",
         margin: "60px auto 120px auto",
@@ -22,7 +21,7 @@ const About = () => {
             component="img"
             sx={{
               width: "auto",
-              maxWidth: { xs: "100%", sm: "312px", md: "400px" },
+              maxWidth: { xs: "90%", sm: "312px", md: "500px" },
               maxHeight: { xs: "100%", sm: "312px", md: "400px" },
               borderRadius: "50px",
             }}
@@ -30,23 +29,24 @@ const About = () => {
             src={laptopWithBackground}
           />
         </Grid>
-        <Grid item xs={12} lg={6} sx={{ paddingRight: { lg: "56px" } }}>
-          <Typography variant="h3" component="div" color="text.primary">
-            ¿Quién soy?
-          </Typography>
-          <br />
-          <Typography variant="body1" component="div" color="text.terciary">
-            Graduado en Ingeniería del Software por la Universidad Politécnica
-            de Madrid. Aunque he trabajado en proyectos Big Data con tecnologías
-            como Spark y Scala, actualmente me dedico al desarrollo web con
-            JavaScript tanto en la parte frontend (React/Angular) como en la
-            parte backend (NodeJS).
-          </Typography>
-          <br />
-          <Typography variant="h6" component="div" color="text.terciary">
-            ¡Siempre dispuesto a aceptar nuevos retos y absorber todo el
-            conocimiento que pueda!
-          </Typography>
+        <Grid item xs={12} lg={6} sx={{ p: 2 }}>
+          <h1 style={{ marginTop: 0 }}>About me</h1>
+          <p>
+            <strong>+2 years experienced web developer</strong> proficient in
+            frontend (React/Angular) and backend (NodeJS) development.
+          </p>
+          <p>
+            Specialized in crafting excellent user experiences and scalable
+            applications. Also, competent in Big Data projects with Spark and
+            Scala. Excited about tech innovation, I bring creativity and
+            technical proficiency to deliver high-quality solutions.
+          </p>
+          <p>
+            <strong>
+              Always ready to accept new challenges and absorb all the knowledge
+              I can!
+            </strong>
+          </p>
         </Grid>
       </Grid>
     </Box>
