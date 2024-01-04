@@ -8,7 +8,8 @@
   padding: 6px;
   max-width: 1200px;
   text-align: center;
-  margin: 100px auto 208px auto;
+  margin: 80px auto 208px auto;
+  grid-template-columns: repeat(1, 1fr);
 }
 
 @media (min-width: 813px) {
@@ -17,7 +18,9 @@
       "name pic"
       "role pic"
       "cv pic";
-  }
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+    }
 }
 
 .banner__picture {
