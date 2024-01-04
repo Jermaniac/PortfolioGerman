@@ -26,7 +26,7 @@ const Projects = () => {
         <Grid item xs={12}>
           <h1>Projects</h1>
         </Grid>
-        <Grid item xs={12} md={6} style={{ display: "flex" }}>
+        <Grid item xs={12} md={12} lg={6} style={{ display: "flex" }}>
           <Card style={{ display: "grid" }}>
             <CardMedia
               component="img"
@@ -55,38 +55,43 @@ const Projects = () => {
             </CardActions>
           </Card>
         </Grid>
-        <Grid item xs={12} md={6} style={{ display: "flex" }}>
-          <Card style={{ display: "grid" }}>
+        <Grid item xs={12} md={12} lg={6}>
+          <Card
+            sx={{
+              display: { xs: "grid", md: "flex" },
+              justifyItems: "center",
+            }}
+          >
             <CardMedia
               component="img"
               image={moodMobileAppGif}
               alt="mood_android_app_gif"
-              sx={{ maxHeight: { md: "286px" } }}
+              sx={{
+                maxWidth: { xs: "40%", md: "24%", lg: "40%" },
+              }}
             />
-            <CardContent sx={{ padding: "24px" }}>
+            <CardContent sx={{ padding: "24px", alignSelf: "center", flex: 1 }}>
               <h2>Mood App</h2>
               <p>
                 This is a mobile application that recognizes seven facial
-                expressions (angry, disgusted, scared, happy, sad, surprised,
-                neutral) from a face photograph. You can either choose an image
-                from the gallery or take a photo using the device&apos;s camera.
-                This recognition is done using a convolutional neural network
-                trained by me.
+                expressions from a face photograph. You can either choose an
+                image from the gallery or take a photo using the device&apos;s
+                camera.
               </p>
+              <CardActions style={{ justifyContent: "center" }}>
+                <Button
+                  size="small"
+                  href="https://expression-test.vercel.app/"
+                  variant="contained"
+                  color="primary"
+                >
+                  CHECK PROJECT
+                </Button>
+              </CardActions>
             </CardContent>
-            <CardActions style={{ justifyContent: "center" }}>
-              <Button
-                size="small"
-                href="https://github.com/gggarzon/TrabajoFinGradoGerman/tree/master/MoodApp"
-                variant="contained"
-                color="primary"
-              >
-                CHECK PROJECT
-              </Button>
-            </CardActions>
           </Card>
         </Grid>
-        <Grid item xs={12} md={6} style={{ display: "flex" }}>
+        <Grid item xs={12} md={12} lg={6} style={{ display: "flex" }}>
           <Card style={{ display: "grid" }}>
             <CardMedia
               component="img"

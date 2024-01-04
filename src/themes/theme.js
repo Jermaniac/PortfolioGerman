@@ -6,7 +6,7 @@ export const appTheme = (mode) => ({
       xs: 0,
       sm: 360,
       md: 600,
-      lg: 1200,
+      lg: 930,
       xl: 1536,
     },
   },
