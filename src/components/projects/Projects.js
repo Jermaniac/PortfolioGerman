@@ -10,6 +10,7 @@ import Box from "@mui/material/Box";
 import moodWebAppGif from "assets/gifs/moodWebApp.gif";
 import moodMobileAppGif from "assets/gifs/moodMobileApp.gif";
 import pricingCryptoAppGif from "assets/gifs/pricingCryptoApp.gif";
+import urlShortenerAppWebp from "assets/gifs/url-shortener-project.webp";
 
 const Projects = () => {
   return (
@@ -110,6 +111,34 @@ const Projects = () => {
               <Button
                 size="small"
                 href="https://test-ms.vercel.app/"
+                variant="contained"
+                color="primary"
+              >
+                CHECK PROJECT
+              </Button>
+            </CardActions>
+          </Card>
+        </Grid>
+        <Grid item xs={12} md={12} lg={6} style={{ display: "flex" }}>
+          <Card style={{ display: "grid" }}>
+            <CardMedia
+              component="img"
+              image={urlShortenerAppWebp}
+              alt="url_shortener_app_webp"
+              sx={{ maxHeight: { md: "286px" } }}
+            />
+            <CardContent sx={{ padding: "24px" }}>
+              <h2>Url Shortener</h2>
+              <p>
+                Introducing the renowned URL shortener project! Simply paste
+                your long URL and receive a concise, shareable link to share
+                with friends. The definitive project!
+              </p>
+            </CardContent>
+            <CardActions style={{ justifyContent: "center" }}>
+              <Button
+                size="small"
+                href="https://url-shortener-frontend-xi.vercel.app/"
                 variant="contained"
                 color="primary"
               >
