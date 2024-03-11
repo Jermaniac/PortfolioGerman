@@ -1,8 +1,8 @@
 import Grid from "@mui/material/Grid";
 import Box from "@mui/material/Box";
+
 import laptopWithBackground from "assets/images/laptop_with_background.webp";
 
-//TODO: fix background
 const About = () => {
   return (
     <Box

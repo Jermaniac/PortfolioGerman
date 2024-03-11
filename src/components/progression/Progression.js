@@ -22,17 +22,15 @@ const Progression = () => {
       className="progression_container"
       sx={{
         textAlign: "center",
-        display: "flex",
+        display: "grid",
         justifyContent: "center",
       }}
     >
+      <h1>Experience</h1>
       <Grid
         container
-        style={{ maxWidth: "1200px", margin: " 60px auto 120px auto" }}
+        style={{ maxWidth: "1200px", margin: "0px auto 120px auto" }}
       >
-        <Grid item xs={12}>
-          <h1>Experience</h1>
-        </Grid>
         <Grid
           item
           xs={12}
