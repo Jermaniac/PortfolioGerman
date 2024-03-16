@@ -81,7 +81,7 @@ const Projects = () => {
                 src={moodWebDemoVideo}
                 ref={(el) => (videoRefs.current[0] = el)}
               />
-              <CardContent sx={{ px: "36px" }}>
+              <CardContent sx={{ px: "60px" }}>
                 <h2>Facial expression recognition web</h2>
                 <p>
                   This project is about an app that recognizes seven facial
@@ -145,7 +145,7 @@ const Projects = () => {
                 alt="url-shortener-app"
                 ref={(el) => (videoRefs.current[1] = el)}
               />
-              <CardContent sx={{ px: "36px" }}>
+              <CardContent sx={{ px: "60px" }}>
                 <h2>Url Shortener</h2>
                 <p>
                   Introducing the renowned URL shortener project! Simply paste
@@ -208,7 +208,7 @@ const Projects = () => {
                 alt="url-shortener-app"
                 ref={(el) => (videoRefs.current[2] = el)}
               />
-              <CardContent sx={{ px: "36px" }}>
+              <CardContent sx={{ px: "60px" }}>
                 <h2>Mood App</h2>
                 <p>
                   This is a mobile application that recognizes seven facial
@@ -265,7 +265,7 @@ const Projects = () => {
                 alt="url-shortener-app"
                 ref={(el) => (videoRefs.current[3] = el)}
               />
-              <CardContent sx={{ px: "36px" }}>
+              <CardContent sx={{ px: "60px" }}>
                 <h2>Crypto Pricing web</h2>
                 <p>
                   It&apos;s a very simple web that displays real-time prices for
