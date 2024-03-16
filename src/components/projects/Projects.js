@@ -69,6 +69,8 @@ const Projects = () => {
                 boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.2)",
               },
             }}
+            onMouseEnter={() => handleMouseEnter(0)}
+            onMouseLeave={() => handleMouseLeave(0)}
           >
             <CardActionArea href="https://expression-test.vercel.app/">
               <CardMedia
@@ -78,8 +80,6 @@ const Projects = () => {
                 alt="url-shortener-app"
                 src={moodWebDemoVideo}
                 ref={(el) => (videoRefs.current[0] = el)}
-                onMouseEnter={() => handleMouseEnter(0)}
-                onMouseLeave={() => handleMouseLeave(0)}
               />
               <CardContent sx={{ px: "36px" }}>
                 <h2>Facial expression recognition web</h2>
@@ -133,6 +133,8 @@ const Projects = () => {
                 boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.2)",
               },
             }}
+            onMouseEnter={() => handleMouseEnter(1)}
+            onMouseLeave={() => handleMouseLeave(1)}
           >
             <CardActionArea href="https://url-shortener-frontend-xi.vercel.app/">
               <CardMedia
@@ -141,9 +143,7 @@ const Projects = () => {
                 muted
                 src={urlShortenerDemoVideo}
                 alt="url-shortener-app"
-                ref={(el) => (videoRefs.current[3] = el)}
-                onMouseEnter={() => handleMouseEnter(3)}
-                onMouseLeave={() => handleMouseLeave(3)}
+                ref={(el) => (videoRefs.current[1] = el)}
               />
               <CardContent sx={{ px: "36px" }}>
                 <h2>Url Shortener</h2>
@@ -196,6 +196,8 @@ const Projects = () => {
                 boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.2)",
               },
             }}
+            onMouseEnter={() => handleMouseEnter(2)}
+            onMouseLeave={() => handleMouseLeave(2)}
           >
             <CardActionArea href="https://expression-test.vercel.app/">
               <CardMedia
@@ -204,9 +206,7 @@ const Projects = () => {
                 muted
                 src={moodWebDemoVideo}
                 alt="url-shortener-app"
-                ref={(el) => (videoRefs.current[1] = el)}
-                onMouseEnter={() => handleMouseEnter(1)}
-                onMouseLeave={() => handleMouseLeave(1)}
+                ref={(el) => (videoRefs.current[2] = el)}
               />
               <CardContent sx={{ px: "36px" }}>
                 <h2>Mood App</h2>
@@ -253,6 +253,8 @@ const Projects = () => {
                 boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.2)",
               },
             }}
+            onMouseEnter={() => handleMouseEnter(3)}
+            onMouseLeave={() => handleMouseLeave(3)}
           >
             <CardActionArea href="https://test-ms.vercel.app/">
               <CardMedia
@@ -261,9 +263,7 @@ const Projects = () => {
                 muted
                 src={pricingCryptoDemoVideo}
                 alt="url-shortener-app"
-                ref={(el) => (videoRefs.current[2] = el)}
-                onMouseEnter={() => handleMouseEnter(2)}
-                onMouseLeave={() => handleMouseLeave(2)}
+                ref={(el) => (videoRefs.current[3] = el)}
               />
               <CardContent sx={{ px: "36px" }}>
                 <h2>Crypto Pricing web</h2>
