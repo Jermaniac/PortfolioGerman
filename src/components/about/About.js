@@ -15,21 +15,24 @@ const About = () => {
         padding: { xs: "24px", md: "48px" },
       }}
     >
-      <Grid container style={{ maxWidth: "1200px" }}>
-        <Grid item xs={12} lg={6}>
+      <Grid container sx={{ maxWidth: { xs: "500px", lg: "1000px" } }}>
+        <Grid
+          item
+          xs={12}
+          lg={6}
+          sx={{ display: "flex", justifyContent: "center" }}
+        >
           <Box
             component="img"
             sx={{
-              width: "auto",
-              maxWidth: { xs: "90%", sm: "312px", md: "500px" },
-              maxHeight: { xs: "100%", sm: "312px", md: "400px" },
+              maxWidth: { xs: "90%", md: "475px", lg: "400px" },
               borderRadius: "50px",
             }}
             alt="laptop_with_background"
             src={laptopWithBackground}
           />
         </Grid>
-        <Grid item xs={12} lg={6} sx={{ p: 2 }}>
+        <Grid item xs={12} lg={6} sx={{ p: { xs: 4, md: 5, lg: 0 } }}>
           <h1 style={{ marginTop: 0 }}>About me</h1>
           <p>
             <strong>+2 years experienced web developer</strong> proficient in

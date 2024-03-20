@@ -55,7 +55,7 @@ const Projects = () => {
         container
         spacing={4}
         sx={{
-          maxWidth: { xs: "500px", lg: "1200px" },
+          maxWidth: { xs: "500px", lg: "900px" },
         }}
       >
         <Grid item xs={12} lg={6}>
