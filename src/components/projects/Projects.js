@@ -1,9 +1,7 @@
 import Grid from "@mui/material/Grid";
 import Card from "@mui/material/Card";
-import CardActions from "@mui/material/CardActions";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
-import Button from "@mui/material/Button";
 import Box from "@mui/material/Box";
 import Divider from "@mui/material/Divider";
 
@@ -12,7 +10,6 @@ import moodWebDemoVideo from "assets/videos/mood-web-demo.mp4";
 import pricingCryptoDemoVideo from "assets/videos/pricing-crypto-demo.mp4";
 import urlShortenerDemoVideo from "assets/videos/url-shortener-demo.mp4";
 
-import AdsClickIcon from "@mui/icons-material/AdsClick";
 import astroLogo from "assets/svg/astro.svg";
 import tailwindLogo from "assets/svg/tailwind.svg";
 import nodeJsLogo from "assets/svg/nodejs.svg";
@@ -22,7 +19,6 @@ import javaLogo from "assets/svg/java.svg";
 import androidLogo from "assets/svg/android.svg";
 
 import { useRef } from "react";
-import { Link } from "@mui/material";
 import { CardActionArea } from "@mui/material";
 
 const Projects = () => {
@@ -61,7 +57,6 @@ const Projects = () => {
         <Grid item xs={12} lg={6}>
           <Card
             sx={{
-              height: "100%",
               cursor: "pointer",
               transition: "transform 0.3s",
               "&:hover": {
@@ -136,7 +131,10 @@ const Projects = () => {
             onMouseEnter={() => handleMouseEnter(1)}
             onMouseLeave={() => handleMouseLeave(1)}
           >
-            <CardActionArea href="https://url-shortener-frontend-xi.vercel.app/">
+            <CardActionArea
+              href="https://url-shortener-frontend-xi.vercel.app/"
+              sx={{ height: "100%" }}
+            >
               <CardMedia
                 component="video"
                 loop
@@ -188,7 +186,6 @@ const Projects = () => {
         <Grid item xs={12} lg={6}>
           <Card
             sx={{
-              height: "100%",
               cursor: "pointer",
               transition: "transform 0.3s",
               "&:hover": {
@@ -245,7 +242,6 @@ const Projects = () => {
         <Grid item xs={12} lg={6}>
           <Card
             sx={{
-              height: "100%",
               cursor: "pointer",
               transition: "transform 0.3s",
               "&:hover": {
@@ -256,7 +252,10 @@ const Projects = () => {
             onMouseEnter={() => handleMouseEnter(3)}
             onMouseLeave={() => handleMouseLeave(3)}
           >
-            <CardActionArea href="https://test-ms.vercel.app/">
+            <CardActionArea
+              href="https://test-ms.vercel.app/"
+              sx={{ height: "100%" }}
+            >
               <CardMedia
                 component="video"
                 loop
