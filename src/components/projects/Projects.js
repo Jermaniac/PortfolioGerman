@@ -77,19 +77,18 @@ const Projects = () => {
                 ref={(el) => (videoRefs.current[0] = el)}
               />
               <CardContent sx={{ px: "60px" }}>
-                <h2>Facial expression recognition web</h2>
+                <h2>Facial recognition web</h2>
                 <p>
-                  This project is about an app that recognizes seven facial
-                  expressions (angry, disgusted, scared, happy, sad, surprised,
-                  neutral) from a face photo using a convolutional neural
-                  network trained by me.
+                  This is a web that recognizes seven facial expressions (angry,
+                  disgusted, scared, happy, sad, surprised, neutral) from a face
+                  photo using a convolutional neural network trained by me.
                 </p>
                 <Divider />
                 <div
                   style={{
                     display: "flex",
                     justifyContent: "end",
-                    margin: "24px",
+                    marginTop: "16px",
                   }}
                 >
                   <img
@@ -148,14 +147,14 @@ const Projects = () => {
                 <p>
                   Introducing the renowned URL shortener project! Simply paste
                   your long URL and receive a concise, shareable link to share
-                  with friends. The definitive project!
+                  with friends. The definitive software project!
                 </p>
                 <Divider />
                 <div
                   style={{
                     display: "flex",
                     justifyContent: "end",
-                    margin: "24px",
+                    marginTop: "16px",
                   }}
                 >
                   <img
@@ -218,7 +217,7 @@ const Projects = () => {
                   style={{
                     display: "flex",
                     justifyContent: "end",
-                    margin: "12px",
+                    marginTop: "16px",
                   }}
                 >
                   <img
@@ -268,14 +267,15 @@ const Projects = () => {
                 <h2>Crypto Pricing web</h2>
                 <p>
                   It&apos;s a very simple web that displays real-time prices for
-                  10 cryptocurrencies. The data used belongs to the Messari API.
+                  10 cryptocurrencies. Shows bid price and ask price. The data
+                  used belongs to the Messari API.
                 </p>
                 <Divider />
                 <div
                   style={{
                     display: "flex",
                     justifyContent: "end",
-                    margin: "24px",
+                    marginTop: "16px",
                   }}
                 >
                   <img

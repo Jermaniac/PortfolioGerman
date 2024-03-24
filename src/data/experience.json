@@ -2,7 +2,7 @@
     {
       "id": 0,
       "entity": "Santander Consumer Global Services",
-      "title": "Full-Stack Developer",
+      "title": "Software Engineer",
       "periodFrom": "MAR 2023",
       "periodTo": "CURRENT",
       "education": false
@@ -42,7 +42,7 @@
     {
       "id": 5,
       "entity": "Universidad Politécnica de Madrid",
-      "title": "Student",
+      "title": "Software Engineer Student",
       "periodFrom": "SEP 2016",
       "periodTo": "JUL 2020",
       "education": true
