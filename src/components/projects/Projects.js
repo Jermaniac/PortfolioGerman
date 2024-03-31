@@ -6,7 +6,7 @@ import Box from "@mui/material/Box";
 import Divider from "@mui/material/Divider";
 
 import moodWebDemoVideo from "assets/videos/mood-web-demo.mp4";
-// import moodMobileDemoVideo from "assets/gifs/moodMobileApp.gif";
+import moodAppDemoVideo from "assets/videos/mood-app-demo.mp4";
 import pricingCryptoDemoVideo from "assets/videos/pricing-crypto-demo.mp4";
 import urlShortenerDemoVideo from "assets/videos/url-shortener-demo.mp4";
 
@@ -72,7 +72,7 @@ const Projects = () => {
                 component="video"
                 loop
                 muted
-                alt="url-shortener-app"
+                alt="mood-web-demo"
                 src={moodWebDemoVideo}
                 ref={(el) => (videoRefs.current[0] = el)}
               />
@@ -195,13 +195,13 @@ const Projects = () => {
             onMouseEnter={() => handleMouseEnter(2)}
             onMouseLeave={() => handleMouseLeave(2)}
           >
-            <CardActionArea href="https://expression-test.vercel.app/">
+            <CardActionArea href="https://github.com/Jermaniac/TrabajoFinGradoGerman/tree/master/TFG/MoodApp">
               <CardMedia
                 component="video"
                 loop
                 muted
-                src={moodWebDemoVideo}
-                alt="url-shortener-app"
+                src={moodAppDemoVideo}
+                alt="mood-app-demo"
                 ref={(el) => (videoRefs.current[2] = el)}
               />
               <CardContent sx={{ px: "60px" }}>
@@ -260,7 +260,7 @@ const Projects = () => {
                 loop
                 muted
                 src={pricingCryptoDemoVideo}
-                alt="url-shortener-app"
+                alt="prycing-crypto-web"
                 ref={(el) => (videoRefs.current[3] = el)}
               />
               <CardContent sx={{ px: "60px" }}>
