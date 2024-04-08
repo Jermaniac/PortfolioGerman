@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import germanSelfieWebp from "assets/images/german-selfie-webp.webp";
-import pdfGerman from "assets/documents/CVGERMAN2022.pdf";
+import pdfGerman from "assets/documents/CVGERMAN2024.pdf";
 import "./Banner.css";
 import Button from "@mui/material/Button";
 import Box from "@mui/material/Box";
