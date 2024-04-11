@@ -146,8 +146,8 @@ const Projects = () => {
                 <h2>Url Shortener</h2>
                 <p>
                   Introducing the renowned URL shortener project! Simply paste
-                  your long URL and receive a concise, shareable link to share
-                  with friends. The definitive software project!
+                  your long URL and receive a concise and shareable link to
+                  share with your friends. The definitive software project!
                 </p>
                 <Divider />
                 <div
@@ -267,8 +267,9 @@ const Projects = () => {
                 <h2>Crypto Pricing web</h2>
                 <p>
                   It&apos;s a very simple web that displays real-time prices for
-                  10 cryptocurrencies. Shows bid price and ask price. The data
-                  used belongs to the Messari API.
+                  10 cryptocurrencies. It shows bid price and ask price to every
+                  cryptocurrency. The data used for this project belongs to the
+                  Messari API.
                 </p>
                 <Divider />
                 <div
