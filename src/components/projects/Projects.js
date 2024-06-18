@@ -19,7 +19,7 @@ import javaLogo from "assets/svg/java.svg";
 import androidLogo from "assets/svg/android.svg";
 
 import { useRef } from "react";
-import { Button, CardActionArea, CardActions } from "@mui/material";
+import { Button, CardActions } from "@mui/material";
 
 import GitHubIcon from "@mui/icons-material/GitHub";
 import PublicIcon from "@mui/icons-material/Public";
@@ -98,6 +98,7 @@ const Projects = () => {
                   size="small"
                   startIcon={<GitHubIcon />}
                   href="https://github.com/Jermaniac/ExpressionMoodApp"
+                  target="_blank"
                 >
                   Code
                 </Button>
@@ -107,6 +108,7 @@ const Projects = () => {
                   size="small"
                   startIcon={<PublicIcon />}
                   href="https://expression-test.vercel.app/"
+                  target="_blank"
                 >
                   Demo
                 </Button>
@@ -185,6 +187,7 @@ const Projects = () => {
                   size="small"
                   startIcon={<GitHubIcon />}
                   href="https://github.com/Jermaniac/url-shortener-app"
+                  target="_blank"
                 >
                   Code
                 </Button>
@@ -194,6 +197,7 @@ const Projects = () => {
                   size="small"
                   startIcon={<PublicIcon />}
                   href="https://url-shortener-frontend-xi.vercel.app/"
+                  target="_blank"
                 >
                   Demo
                 </Button>
@@ -272,6 +276,7 @@ const Projects = () => {
                   size="small"
                   startIcon={<GitHubIcon />}
                   href="https://github.com/Jermaniac/TrabajoFinGradoGerman/tree/master/TFG/MoodApp"
+                  target="_blank"
                 >
                   Code
                 </Button>
@@ -343,6 +348,7 @@ const Projects = () => {
                   size="small"
                   startIcon={<GitHubIcon />}
                   href="https://github.com/Jermaniac/TestMS"
+                  target="_blank"
                 >
                   Code
                 </Button>
@@ -352,6 +358,7 @@ const Projects = () => {
                   size="small"
                   startIcon={<PublicIcon />}
                   href="https://test-ms.vercel.app/"
+                  target="_blank"
                 >
                   Demo
                 </Button>
