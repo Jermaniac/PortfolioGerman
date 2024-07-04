@@ -7,7 +7,7 @@ import Divider from "@mui/material/Divider";
 
 import moodWebDemoVideo from "assets/videos/mood-web-demo.mp4";
 import moodAppDemoVideo from "assets/videos/mood-app-demo.mp4";
-import pricingCryptoDemoVideo from "assets/videos/pricing-crypto-demo.mp4";
+import gasTrackerWebDemoVideo from "assets/videos/gas-tracker-demo.mp4";
 import urlShortenerDemoVideo from "assets/videos/url-shortener-demo.mp4";
 
 import astroLogo from "assets/svg/astro.svg";
@@ -322,17 +322,17 @@ const Projects = () => {
               component="video"
               loop
               muted
-              src={pricingCryptoDemoVideo}
+              src={gasTrackerWebDemoVideo}
               alt="prycing-crypto-web"
               ref={(el) => (videoRefs.current[3] = el)}
             />
             <CardContent sx={{ px: "36px" }}>
-              <h2>Crypto Pricing web</h2>
+              <h2>Gas Tracker Web</h2>
               <p>
-                It&apos;s a very simple web that displays real-time prices for
-                10 cryptocurrencies. It shows bid price and ask price to every
-                cryptocurrency. The data used for this project belongs to the
-                Messari API.
+                This is a dynamic web application designed to provide users with
+                up-to-date information on various fuel types across all
+                provinces in Spain. This API uses the official API from the
+                Spanish government.
               </p>
               <CardActions
                 sx={{
@@ -347,7 +347,7 @@ const Projects = () => {
                   variant="outlined"
                   size="small"
                   startIcon={<GitHubIcon />}
-                  href="https://github.com/Jermaniac/TestMS"
+                  href="https://github.com/Jermaniac/gas-tracker"
                   target="_blank"
                 >
                   Code
@@ -357,7 +357,7 @@ const Projects = () => {
                   variant="outlined"
                   size="small"
                   startIcon={<PublicIcon />}
-                  href="https://test-ms.vercel.app/"
+                  href="https://gas-tracker-glj8ufb3q-jermaniacs-projects.vercel.app/dashboard"
                   target="_blank"
                 >
                   Demo
