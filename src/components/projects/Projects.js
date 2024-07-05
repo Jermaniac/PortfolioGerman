@@ -17,6 +17,7 @@ import pythonLogo from "assets/svg/python.svg";
 import reactLogo from "assets/svg/react.svg";
 import javaLogo from "assets/svg/java.svg";
 import androidLogo from "assets/svg/android.svg";
+import nextLogo from "assets/svg/nextjs.svg";
 
 import { useRef } from "react";
 import { Button, CardActions } from "@mui/material";
@@ -371,6 +372,20 @@ const Projects = () => {
                   marginTop: "16px",
                 }}
               >
+                <img
+                  src={pythonLogo}
+                  alt="Python Logo"
+                  width={25}
+                  height={25}
+                  style={{ marginRight: "10px" }}
+                />
+                <img
+                  src={nextLogo}
+                  alt="Next Logo"
+                  width={25}
+                  height={25}
+                  style={{ marginRight: "10px" }}
+                />
                 <img src={reactLogo} alt="React Logo" width={25} height={25} />
               </div>
             </CardContent>
