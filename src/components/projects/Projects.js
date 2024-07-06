@@ -358,7 +358,7 @@ const Projects = () => {
                   variant="outlined"
                   size="small"
                   startIcon={<PublicIcon />}
-                  href="https://gas-tracker-glj8ufb3q-jermaniacs-projects.vercel.app/dashboard"
+                  href="https://gas-tracker-xi.vercel.app/"
                   target="_blank"
                 >
                   Demo
