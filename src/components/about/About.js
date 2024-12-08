@@ -35,7 +35,7 @@ const About = () => {
         <Grid item xs={12} lg={6} sx={{ p: { xs: 4, md: 5, lg: 0 } }}>
           <h1 style={{ marginTop: 0 }}>About me</h1>
           <p>
-            <strong>+3 years experienced sofware engineer</strong> proficient in
+            <strong>+4 years experienced sofware engineer</strong> proficient in
             frontend (React/Angular) and backend (NodeJS/Java) development.
           </p>
           <p>
