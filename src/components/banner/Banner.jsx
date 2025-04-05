@@ -1,11 +1,11 @@
 import { useContext } from "react";
-import germanSelfieWebp from "assets/images/german-selfie-webp.webp";
-import pdfGerman from "assets/documents/CV_GERMAN_GONZALEZ_GARZON.pdf";
+import germanSelfieWebp from "/images/german-selfie-webp.webp";
+import pdfGerman from "/documents/CV_GERMAN_GONZALEZ_GARZON.pdf";
 import "./Banner.css";
 import Button from "@mui/material/Button";
 import Box from "@mui/material/Box";
 
-import { ThemeContext } from "contexts/ThemeContext";
+import { ThemeContext } from "@/contexts/ThemeContext";
 
 const HEXA_BLACK_COLOR = "#121212";
 const HEXA_WHITE_COLOR = "#ffffff";

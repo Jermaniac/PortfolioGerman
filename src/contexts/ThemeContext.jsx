@@ -1,7 +1,7 @@
 import { createContext, useMemo, useState } from "react";
 import { ThemeProvider } from "@mui/material/styles";
 import { CssBaseline, createTheme } from "@mui/material";
-import { appTheme } from "themes/theme";
+import { appTheme } from "@/themes/theme";
 
 const LIGHT_THEME = "light";
 const DARK_THEME = "dark";

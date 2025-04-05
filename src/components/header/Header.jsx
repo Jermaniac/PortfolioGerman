@@ -15,7 +15,7 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import DarkModeIcon from "@mui/icons-material/DarkMode";
 import LightModeIcon from "@mui/icons-material/LightMode";
 
-import { ThemeContext } from "contexts/ThemeContext";
+import { ThemeContext } from "@/contexts/ThemeContext";
 
 const hoverButtonStyles = {
   "&:hover": {

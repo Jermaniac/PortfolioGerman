@@ -9,13 +9,15 @@
     "@mui/icons-material": "^5.3.0",
     "@mui/lab": "^5.0.0-alpha.96",
     "@mui/material": "^5.3.0",
+    "@vitejs/plugin-react": "^4.3.4",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
-    "react-scripts": "^5.0.1"
+    "vite": "^6.2.5"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "lint": "eslint src/**/*.js src/*.js"
@@ -33,7 +35,12 @@
     ]
   },
   "devDependencies": {
-    "eslint": "^8.54.0",
-    "eslint-plugin-react": "^7.33.2"
+    "eslint": "^8.57.1",
+    "eslint-config-prettier": "^10.1.1",
+    "eslint-plugin-import": "^2.31.0",
+    "eslint-plugin-jsx-a11y": "^6.10.2",
+    "eslint-plugin-react": "^7.37.5",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "vite-plugin-eslint": "^1.8.1"
   }
 }
