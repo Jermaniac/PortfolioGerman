@@ -48,7 +48,7 @@ const projectsData = [
         videoSrc: moodAppDemoVideo,
         alt: "mood-app-demo",
         codeLink: "https://github.com/Jermaniac/TrabajoFinGradoGerman/tree/master/TFG/MoodApp",
-        demoLink: null,
+        demoLink: "https://github.com/Jermaniac/TrabajoFinGradoGerman/tree/master/TFG/MoodApp",
         techStack: [
             { name: "Java", logo: javaLogo },
             { name: "Android", logo: androidLogo },
