@@ -9,7 +9,7 @@ const DARK_THEME = "dark";
 const ThemeContext = createContext();
 
 const ThemeContextProvider = ({ children }) => {
-  const [mode, setMode] = useState(LIGHT_THEME);
+  const [mode, setMode] = useState(DARK_THEME);
   const colorMode = useMemo(
     () => ({
       toggleColorMode: () => {

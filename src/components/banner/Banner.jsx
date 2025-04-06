@@ -1,37 +1,51 @@
-import { useContext } from "react";
 import germanSelfieWebp from "/images/german-selfie-webp.webp";
+import computerAndCoffeWebp from "/images/computer_code_and_coffe.webp";
 import pdfGerman from "/documents/CV_GERMAN_GONZALEZ_GARZON.pdf";
 import "./Banner.css";
 import Button from "@mui/material/Button";
 import Box from "@mui/material/Box";
 
-import { ThemeContext } from "@/contexts/ThemeContext";
-
-const HEXA_BLACK_COLOR = "#121212";
-const HEXA_WHITE_COLOR = "#ffffff";
-
-const getColorValues = (mode) => {
-  const colorSchemes = {
-    light: [HEXA_WHITE_COLOR, HEXA_BLACK_COLOR],
-    dark: [HEXA_BLACK_COLOR, HEXA_WHITE_COLOR],
-  };
-
-  const [themeHarmonyColor, themeContrastColor] = colorSchemes[mode];
-  return { themeHarmonyColor, themeContrastColor };
-};
+import HeaderIconsOnly from "../header/HeaderIconsOnly";
 
 const Banner = () => {
-  const { mode } = useContext(ThemeContext);
-  const { themeHarmonyColor, themeContrastColor } = getColorValues(mode);
 
   return (
     <>
       <Box
         sx={{
           display: "flex",
+          flexDirection: "column",
           justifyContent: "center",
+          alignItems: "center",
+          height: "100vh"
         }}
       >
+        <Box
+          sx={{
+            position: "absolute",
+            top: 0,
+            left: 0,
+            width: "100%",
+            height: "100%",
+            backgroundColor: "rgba(0, 0, 0, 0.7)",
+            zIndex: -1
+          }}
+        />
+        <Box
+          sx={{
+            position: "absolute",
+            width: "100%",
+            height: "100%",
+            backgroundImage: `url(${computerAndCoffeWebp})`,
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+            filter: "blur(2px)",
+            zIndex: -2
+          }}
+        />
+
+        <HeaderIconsOnly />
+
         <Box className="banner">
           <picture className="banner__picture">
             <img
@@ -41,28 +55,15 @@ const Banner = () => {
             />
           </picture>
           <div className="banner__name">
-            <h4 className="banner__name--item">¡Hello!</h4>
-            <h4 className="banner__name--item">My name is</h4>
-            <h4 className="banner__name--item-fullname">Germán</h4>
+            <h2 className="banner__name--item">¡Hello!</h2>
+            <h2 className="banner__name--item">My name is</h2>
+            <h1 className="banner__name--item-fullname" style={{ fontSize: "3rem" }}>Germán González</h1>
           </div>
           <div className="banner__role">
-            <ul
-              className="banner__role--dynamic_text"
-              style={{
-                "--bgColor": themeHarmonyColor,
-                "--borderColor": themeContrastColor,
-              }}
-            >
-              <li className="banner__role--dynamic_text--item">
-                <h4>Web Developer</h4>
-              </li>
-              <li className="banner__role--dynamic_text--item">
-                <h4>Software Engineer</h4>
-              </li>
-              <li className="banner__role--dynamic_text--item">
-                <h4>Big Data Developer</h4>
-              </li>
-            </ul>
+            <div className="banner__role-container">
+              <h4>Software Engineer</h4>
+            </div>
+            <div className="short-right-border"/>
           </div>
           <Button
             className="banner__cv"
@@ -70,7 +71,21 @@ const Banner = () => {
             download="CV_GERMAN_GONZALEZ_GARZON"
             variant="contained"
             color="primary"
-            sx={{ margin: 6 }}
+            sx={{
+              margin: 6,
+              fontSize: "1rem",
+              padding: 2,
+              background: "linear-gradient(90deg, #1976d2, #42a5f5)",
+              color: "white",
+              borderRadius: "8px",
+              boxShadow: "0px 4px 15px rgba(0, 0, 0, 0.2)",
+              transition: "transform 0.3s, box-shadow 0.3s",
+              '&:hover': {
+                transform: "scale(1.1)",
+                boxShadow: "0px 6px 20px rgba(0, 0, 0, 0.3)",
+                background: "linear-gradient(90deg, #42a5f5, #1976d2)",
+              },
+            }}
           >
             Download CV
           </Button>
