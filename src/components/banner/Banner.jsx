@@ -10,42 +10,39 @@ import HeaderIconsOnly from "../header/HeaderIconsOnly";
 const Banner = () => {
 
   return (
-    <>
+    <Box
+      sx={{
+        height: "100vh"
+      }}
+    >
       <Box
         sx={{
-          display: "flex",
-          flexDirection: "column",
-          justifyContent: "center",
-          alignItems: "center",
-          height: "100vh"
+          position: "absolute",
+          top: 0,
+          left: 0,
+          width: "100%",
+          height: "100%",
+          backgroundColor: "rgba(0, 0, 0, 0.7)",
+          zIndex: -1
         }}
-      >
-        <Box
-          sx={{
-            position: "absolute",
-            top: 0,
-            left: 0,
-            width: "100%",
-            height: "100%",
-            backgroundColor: "rgba(0, 0, 0, 0.7)",
-            zIndex: -1
-          }}
-        />
-        <Box
-          sx={{
-            position: "absolute",
-            width: "100%",
-            height: "100%",
-            backgroundImage: `url(${computerAndCoffeWebp})`,
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-            filter: "blur(2px)",
-            zIndex: -2
-          }}
-        />
+      />
+      <Box
+        sx={{
+          position: "absolute",
+          width: "100%",
+          height: "100%",
+          backgroundImage: `url(${computerAndCoffeWebp})`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          filter: "blur(2px)",
+          zIndex: -2
+        }}
+      />
 
-        <HeaderIconsOnly />
+      <Box sx={{ display: "flex", flexDirection:"column" ,justifyContent: "center", alignItems: "center", padding: 5, zIndex: -3 }}> 
+        <HeaderIconsOnly
 
+        />
         <Box className="banner">
           <picture className="banner__picture">
             <img
@@ -57,13 +54,13 @@ const Banner = () => {
           <div className="banner__name">
             <h2 className="banner__name--item">¡Hello!</h2>
             <h2 className="banner__name--item">My name is</h2>
-            <h1 className="banner__name--item-fullname" style={{ fontSize: "3rem" }}>Germán González</h1>
+            <h1 className="banner__name--item-fullname">Germán González</h1>
           </div>
           <div className="banner__role">
             <div className="banner__role-container">
               <h4>Software Engineer</h4>
             </div>
-            <div className="short-right-border"/>
+            <div className="short-right-border" />
           </div>
           <Button
             className="banner__cv"
@@ -91,7 +88,7 @@ const Banner = () => {
           </Button>
         </Box>
       </Box>
-    </>
+    </Box>
   );
 };
 
