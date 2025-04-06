@@ -52,16 +52,21 @@
 }
 
 .banner__role-container {
-  font-size: 1rem;
-  display: inline-flex;
-  align-items: center;
+  display: inline-block;
   position: relative;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 1s steps(20) forwards;
+  width: fit-content;
 }
 
 .short-right-border {
-  position: absolute;
-  right: -10px; /* Adjust spacing to align with text */
-  height: auto;
+  display: inline-block;
+  margin-left: 5px;
+  height: 1em;
+  vertical-align: middle;
+  position: relative;
+  top: 0.1em; /* Adjusted to align perfectly with the text */
 }
 
 .banner__role {
@@ -74,13 +79,15 @@
 
 .short-right-border::after {
   content: '';
-  position: absolute;
-  height: 40px;
-  width: 3px;
+  display: inline-block;
+  width: 2px;
+  height: 100%;
   background-color: white;
   animation: typing-blink 0.8s steps(1) infinite;
+  font-size: 1rem;
 }
 
+/* Desktop styles */
 @media (min-width: 813px) {
   .banner {
     grid-template-areas:
@@ -112,6 +119,10 @@
   .banner__cv {
     font-size: 1.2rem;
   }
+
+  .short-right-border::after {
+    height: 2rem; /* Larger font size for desktop */
+  }
 }
 
 @keyframes animate {
@@ -131,6 +142,7 @@
 }
 
 @keyframes typing-blink {
+
   0%,
   50% {
     opacity: 1;
