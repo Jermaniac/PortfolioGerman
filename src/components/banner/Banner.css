@@ -8,7 +8,7 @@
   padding: 6px;
   max-width: 1200px;
   text-align: center;
-  margin: 24px auto;
+  margin: 36px auto;
   grid-template-columns: repeat(1, 1fr);
 }
 
@@ -20,8 +20,8 @@
 
 .banner__picture--img {
   border-radius: 50%;
-  max-width: 225px;
-  max-height: 225px;
+  max-width: 200px;
+  max-height: 200px;
 }
 
 .banner__name {
