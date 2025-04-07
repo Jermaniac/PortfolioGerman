@@ -12,37 +12,27 @@ const Banner = () => {
   return (
     <Box
       sx={{
-        height: "100vh"
+        height: "100vh",
+        background: `url(${computerAndCoffeWebp}) no-repeat center center`,
+        backgroundSize: "cover",
+        position: "relative",
+        display: "flex",
+        justifyContent: "center",
       }}
     >
       <Box
         sx={{
           position: "absolute",
-          top: 0,
-          left: 0,
           width: "100%",
           height: "100%",
-          backgroundColor: "rgba(0, 0, 0, 0.7)",
-          zIndex: -1
-        }}
-      />
-      <Box
-        sx={{
-          position: "absolute",
-          width: "100%",
-          height: "100%",
-          backgroundImage: `url(${computerAndCoffeWebp})`,
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-          filter: "blur(2px)",
-          zIndex: -2
+          background: "rgba(0, 0, 0, 0.7)",
+          opacity: 0.9,
+          zIndex: 0,
         }}
       />
 
-      <Box sx={{ display: "flex", flexDirection:"column" ,justifyContent: "center", alignItems: "center", padding: 5, zIndex: -3 }}> 
-        <HeaderIconsOnly
-
-        />
+      <Box sx={{ display: "flex", flexDirection:"column" ,justifyContent: "center", alignItems: "center", padding: 5, position:"absolute", zIndex: 1 }}> 
+        <HeaderIconsOnly/>
         <Box className="banner">
           <picture className="banner__picture">
             <img

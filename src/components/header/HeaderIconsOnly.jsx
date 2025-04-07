@@ -47,7 +47,7 @@ const HeaderIconsOnly = () => {
   );
 
   return (
-    <Box sx={{ display: "flex", justifyContent: "center", gap: 2 }}>
+    <Box sx={{ display: "flex", justifyContent: "center", gap: 2, marginTop: 4 }}>
       {mailIconButton}
       {linkedinIconButton}
       {githubIconButton}
