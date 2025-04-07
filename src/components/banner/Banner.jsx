@@ -68,21 +68,6 @@ const Banner = () => {
             download="CV_GERMAN_GONZALEZ_GARZON"
             variant="contained"
             color="primary"
-            sx={{
-              margin: 6,
-              fontSize: "1rem",
-              padding: 2,
-              background: "linear-gradient(90deg, #1976d2, #42a5f5)",
-              color: "white",
-              borderRadius: "8px",
-              boxShadow: "0px 4px 15px rgba(0, 0, 0, 0.2)",
-              transition: "transform 0.3s, box-shadow 0.3s",
-              '&:hover': {
-                transform: "scale(1.1)",
-                boxShadow: "0px 6px 20px rgba(0, 0, 0, 0.3)",
-                background: "linear-gradient(90deg, #42a5f5, #1976d2)",
-              },
-            }}
           >
             Download CV
           </Button>
