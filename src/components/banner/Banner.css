@@ -8,6 +8,9 @@
   padding: 6px;
   max-width: 1200px;
   text-align: center;
+  vertical-align: middle;
+  justify-content: center;
+  position: relative;
   margin: 18px auto;
   grid-template-columns: repeat(1, 1fr);
 }
@@ -21,7 +24,21 @@
 .banner__picture--img {
   border-radius: 50%;
   max-width: 200px;
-  max-height: 20vh;
+  max-height: 200px;
+}
+
+@media (max-height: 500px) {
+  .banner {
+    grid-template-areas:
+      "name"
+      "role"
+      "cv";
+    grid-template-columns: 1fr;
+  }
+
+  .banner__picture {
+    display: none; /* Hide the picture when the height is too small */
+  }
 }
 
 .banner__name {

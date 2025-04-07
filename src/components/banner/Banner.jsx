@@ -29,9 +29,8 @@ const Banner = () => {
           opacity: 0.9
         }}
       />
-
-      <Box sx={{ display: "flex", flexDirection: "column", justifyContent: "center", position: "relative", verticalAlign: "middle" }}>
-        <HeaderIconsOnly />
+      <HeaderIconsOnly />
+      <Box sx={{ alignContent: "center"}}>
         <Box className="banner">
           <picture className="banner__picture">
             <img
