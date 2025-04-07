@@ -24,10 +24,10 @@ const TimelineItemComponent = ({ experienceItem }) => {
             </TimelineSeparator>
             <TimelineContent sx={{ py: "12px", px: 2 }}>
                 <Typography variant="h5" component="span" color="text.terciary">
-                    {experienceItem.entity}
+                    {experienceItem.title}
                 </Typography>
                 <Typography variant="h6" color="text.secondary">
-                    {experienceItem.title}
+                    {experienceItem.entity}
                 </Typography>
                 <Typography variant="subtitle1" component="span" color="text.terciary">
                     {experienceItem.periodFrom} - {experienceItem.periodTo}
