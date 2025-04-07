@@ -30,7 +30,7 @@ const Banner = () => {
         }}
       />
 
-      <Box sx={{ display: "flex", flexDirection:"column" ,justifyContent: "center", alignItems: "center", padding: 2, position:"absolute"}}> 
+      <Box sx={{ display: "flex", flexDirection:"column" ,justifyContent: "center", padding: 2, position:"relative", verticalAlign: "middle"}}> 
         <HeaderIconsOnly/>
         <Box className="banner">
           <picture className="banner__picture">
