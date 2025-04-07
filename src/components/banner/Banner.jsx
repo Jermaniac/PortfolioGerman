@@ -26,12 +26,11 @@ const Banner = () => {
           width: "100%",
           height: "100%",
           background: "rgba(0, 0, 0, 0.7)",
-          opacity: 0.9,
-          zIndex: 0,
+          opacity: 0.9
         }}
       />
 
-      <Box sx={{ display: "flex", flexDirection:"column" ,justifyContent: "center", alignItems: "center", padding: 5, position:"absolute", zIndex: 1 }}> 
+      <Box sx={{ display: "flex", flexDirection:"column" ,justifyContent: "center", alignItems: "center", padding: 2, position:"absolute"}}> 
         <HeaderIconsOnly/>
         <Box className="banner">
           <picture className="banner__picture">
