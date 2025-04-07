@@ -8,7 +8,7 @@
   padding: 6px;
   max-width: 1200px;
   text-align: center;
-  margin: 36px auto;
+  margin: 18px auto;
   grid-template-columns: repeat(1, 1fr);
 }
 
@@ -21,7 +21,7 @@
 .banner__picture--img {
   border-radius: 50%;
   max-width: 200px;
-  max-height: 200px;
+  max-height: 20vh;
 }
 
 .banner__name {
@@ -101,7 +101,7 @@
       "cv pic";
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 30px;
-    margin: auto,
+    margin: 60px auto;
   }
 
   .banner__picture--img {
