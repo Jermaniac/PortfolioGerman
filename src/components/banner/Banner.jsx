@@ -30,8 +30,8 @@ const Banner = () => {
         }}
       />
 
-      <Box sx={{ display: "flex", flexDirection:"column" ,justifyContent: "center", position:"relative", verticalAlign: "middle"}}> 
-        <HeaderIconsOnly/>
+      <Box sx={{ display: "flex", flexDirection: "column", justifyContent: "center", position: "relative", verticalAlign: "middle" }}>
+        <HeaderIconsOnly />
         <Box className="banner">
           <picture className="banner__picture">
             <img
@@ -57,6 +57,13 @@ const Banner = () => {
             download="CV_GERMAN_GONZALEZ_GARZON"
             variant="contained"
             color="primary"
+            sx={{
+              fontSize: {
+                xs: "0.7rem",
+                sm: "0.8rem",
+                lg: "1rem",
+              }
+            }}
           >
             Download CV
           </Button>
