@@ -1,6 +1,6 @@
 import germanSelfieWebp from "/images/german-selfie-webp.webp";
 import computerAndCoffeWebp from "/images/computer_code_and_coffe.webp";
-import pdfGerman from "/documents/CV_GERMAN_GONZALEZ_GARZON.pdf";
+import pdfGerman from "/documents/CV_GERMAN_GONZALEZ.pdf";
 import "./Banner.css";
 import Button from "@mui/material/Button";
 import Box from "@mui/material/Box";
