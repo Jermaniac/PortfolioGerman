@@ -1,6 +1,6 @@
 import germanSelfieWebp from "/images/german-selfie-webp.webp";
 import computerAndCoffeWebp from "/images/computer_code_and_coffe.webp";
-import pdfGerman from "/documents/CV_GERMAN_GONZALEZ.pdf";
+import pdfGerman from "/documents/GERMAN_GONZALEZ_CV.pdf";
 import "./Banner.css";
 import Button from "@mui/material/Button";
 import Box from "@mui/material/Box";
@@ -30,7 +30,7 @@ const Banner = () => {
         }}
       />
       <HeaderIconsOnly />
-      <Box sx={{ alignContent: "center"}}>
+      <Box sx={{ alignContent: "center" }}>
         <Box className="banner">
           <picture className="banner__picture">
             <img
@@ -53,7 +53,7 @@ const Banner = () => {
           <Button
             className="banner__cv"
             href={pdfGerman}
-            download="CV_GERMAN_GONZALEZ_GARZON"
+            download="GERMAN_GONZALEZ_CV"
             variant="contained"
             color="primary"
             sx={{
